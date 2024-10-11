@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'impact';
+    src: url('../fonts/impact.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%; 
+    margin: 0 auto;
+}
+
+@media (max-width: 360px) {
+    .container {
+        max-width: 360px; 
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px; 
+        padding: 32px;
+    }
+}
+
+
+@media (min-width: 1279px) {
+    .container {
+        max-width: 1280px; 
+        
+    }
+}
