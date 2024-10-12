@@ -6,6 +6,7 @@
 */
 /* Common styles */
 @import url('./reset.css');
+@import url('./base.css');
 
 /* Sections style */
 @import url('./header.css');
@@ -19,13 +20,3 @@
 @import url('./work_together.css');
 @import url('./footer.css');
 
-@font-face {
-    font-family: 'impact';
-    src: url('../fonts/impact.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-    font-family: 'Impact', sans-serif;
-}
