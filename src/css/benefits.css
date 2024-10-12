@@ -12,8 +12,10 @@
 }
 
 .benefits {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 2fr; /* Заголовок занимает 1 часть, список - 2 части */
+	column-gap: 151	px; /* Отступ между заголовком и списком */
+	align-items: start; /* Выравнивание по верху */
 	padding-top: 117px;
 }
 
@@ -34,6 +36,7 @@
 
 .benefits-list-wrap {
 	display: flex;
+	
 	flex-wrap: wrap;
 	column-gap: 32px;
 }
@@ -43,6 +46,7 @@
 	flex-direction: column;
 	row-gap: 16px;
 	width: 384px;
+	
 }
 
 .benefits-icon {
