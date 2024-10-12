@@ -10,6 +10,7 @@ const errorMessege = str =>
     messageLineHeight: '24px',
     maxWidth: '310px',
     theme: 'dark',
+    timeout: 200000,
   });
 
 const createModal = (element, title, message) => {

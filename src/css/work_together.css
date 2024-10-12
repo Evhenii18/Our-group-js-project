@@ -75,12 +75,7 @@
   letter-spacing: 0.04em;
   color: var(--error);
 }
-.notvalid.is-hidden {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
+
 .form-input {
   font-family: var(--font-family);
   font-weight: 300;
@@ -106,6 +101,22 @@
 .contact-form-btn:hover,
 .contact-form-btn:focus {
   background-color: var(--hover);
+}
+.input-box {
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  fill: var(--accet-green);
+}
+.notvalid.is-hidden,
+.input-icon.is-hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .form-input:focus {
@@ -145,6 +156,7 @@
   flex-direction: column;
   gap: 16px;
 }
+
 .backdrop.is-hidden > .modal {
   transform: translate(-50%, -50%) scale(0.5) rotate(360deg);
 }
@@ -227,6 +239,10 @@
   .modal {
     width: 492px;
     padding: 64px;
+  }
+  .input-icon {
+    top: 30%;
+    left: 95%;
   }
 }
 @media screen and (min-width: 1280px) {
