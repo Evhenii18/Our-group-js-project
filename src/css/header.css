@@ -30,6 +30,7 @@ line-height: 1;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #292929;
+cursor: pointer;
 }
 
 .nav-link-span {
