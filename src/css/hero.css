@@ -101,6 +101,29 @@
   position: relative;
   z-index: 2;
 }
+
+.hero-social-link {
+  cursor: pointer;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+/* .hero-social-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: black;
+  transition: color 0.1s ease-in-out;
+}
+
+.hero-social-link:hover::before {
+  color: #00b068;
+} */
+
 .hero-icon {
   position: relative;
   z-index: 2;
