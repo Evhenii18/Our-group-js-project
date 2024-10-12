@@ -1,0 +1,114 @@
+.hero-container {
+  padding-top: 96px;
+  padding-bottom: 56px;
+  overflow: hidden;
+  background-image: url(../img/benefits-bg-desctop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+
+.hero-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../img/hero-bg-desctop.jpg);
+  background-size: cover;
+  background-position: top right;
+  filter: blur(6px);
+  z-index: 1;
+}
+
+.hero-title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+.hero-title span {
+  color: #00b068;
+}
+.hero-link-project {
+  font-size: 18px;
+  line-height: 1.56;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-link-project span {
+  border-radius: 16px;
+  background-color: #bcdfd1;
+  padding: 32px 91px 32px 0;
+}
+
+.hero-text {
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+.hero-text span {
+  color: #00b068;
+}
+.hero-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 0px;
+  max-width: 100%;
+  height: 232px;
+  background: #e4e5e6;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (min-width: 360px) {
+  .hero-text {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 124px;
+    line-height: 1.19;
+    letter-spacing: 0.01em;
+  }
+  .hero-link-project {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .hero-text {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 704px;
+  }
+  .hero-social {
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px 0px;
+    max-width: 768px;
+    height: 104px;
+  }
+  .hero-container {
+    padding-top: 72px;
+    padding-bottom: 88px;
+  }
+  .container {
+    max-width: 768px;
+    padding: 32px;
+  }
+}
