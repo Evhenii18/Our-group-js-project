@@ -5,6 +5,7 @@ const refs = {
   contactForm: document.querySelector('.contact-form'),
   backDrop: document.querySelector('.backdrop'),
   errorMessage: document.querySelector('.notvalid'),
+  checkedIcon: document.querySelector('.input-icon'),
 };
 
 const toggleModal = () => refs.backDrop.classList.toggle('is-hidden');
@@ -35,6 +36,7 @@ const onSbmit = e => {
       createModal(refs.backDrop, title, message);
       createModalFunctions();
       e.target.reset();
+      refs.checkedIcon.classList.add('is-hidden');
     })
     .catch(error => {
       errorMessege(
@@ -51,8 +53,9 @@ const chekValidity = debounce(e => {
   } else {
     refs.errorMessage.classList.add('is-hidden');
     e.target.classList.remove('notvalid');
+    refs.checkedIcon.classList.remove('is-hidden');
   }
-}, 2000);
+}, 1000);
 
 refs.contactForm.email.addEventListener('blur', () => {
   refs.errorMessage.classList.add('is-hidden');

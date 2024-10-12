@@ -2,7 +2,7 @@ const options = {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
-    // accept: 'application',
+    accept: 'application/json',
   },
 };
 export const createContact = async post => {
