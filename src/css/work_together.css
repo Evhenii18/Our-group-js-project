@@ -1,0 +1,270 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  padding: 80px 20px;
+}
+.section-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 0;
+}
+.green-span {
+  color: var(--accet-green);
+}
+.contacts-form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contacts-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 300px;
+}
+.contacts-box {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.contacts-icon {
+  stroke: var(--accet-green);
+  fill: transparent;
+}
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contacts-link {
+  display: flex;
+  gap: 16px;
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  transition: color var(--animation-mode);
+}
+.contacts-link:focus,
+.contacts-link:hover {
+  color: var(--accet-green);
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.notvalid {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: var(--error);
+}
+
+.form-input {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid var(--light-grey);
+  background: var(--light-grey);
+}
+.contact-form-btn {
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 100%;
+  border-color: transparent;
+  background-color: var(--accet-green);
+  color: var(--white);
+  transition: background-color var(--animation-mode);
+}
+.contact-form-btn:hover,
+.contact-form-btn:focus {
+  background-color: var(--hover);
+}
+.input-box {
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  fill: var(--accet-green);
+}
+.notvalid.is-hidden,
+.input-icon.is-hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-input:focus {
+  border: none;
+  outline: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity var(--animation-mode), visibility var(--animation-mode);
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 300px;
+  max-height: 98%;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 16px;
+  transition: transform var(--animation-mode);
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.backdrop.is-hidden > .modal {
+  transform: translate(-50%, -50%) scale(0.5) rotate(360deg);
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  border-color: transparent;
+}
+.modal-close {
+  stroke: var(--black);
+  stroke-width: 24px;
+  transition: stroke var(--animation-mode);
+}
+.modal-close:hover,
+.modal-close:focus {
+  stroke: var(--accet-green);
+}
+.modal-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accet-green);
+}
+.modal-text {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+@media screen and (min-width: 360px) {
+  .modal {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    gap: 60px;
+    background-image: url(../img/work_together_bg.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    padding: 124px 32px;
+  }
+  .section-title {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+  }
+  .contacts-text {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 500px;
+  }
+  .contacts-form-box {
+    gap: 60px;
+  }
+  .contacts-box {
+    width: 640px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contacts-list {
+    flex-direction: row;
+  }
+  .contact-form-btn {
+    width: 175px;
+  }
+  .modal {
+    width: 492px;
+    padding: 64px;
+  }
+  .input-icon {
+    top: 30%;
+    left: 95%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts {
+    background-image: url(../img/work_together_bg_1280.png);
+    padding: 164px 32px;
+  }
+  .section-title {
+    width: 50%;
+  }
+  .contacts-form-box {
+    display: flex;
+    flex-direction: row;
+  }
+  .contacts-box {
+    width: 100%;
+    gap: 120px;
+  }
+  .contacts-list {
+    flex-direction: column;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
