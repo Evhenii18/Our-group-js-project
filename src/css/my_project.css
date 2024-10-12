@@ -1,0 +1,81 @@
+.my-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project-img {
+  border-radius: 16px;
+  width: 320px;
+  height: 184px;
+}
+
+.project-stacks {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  margin: 12px 0px 16px 0px;
+}
+.projects-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.projects-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.projects-link {
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 125px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--light-grey);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: inherit;
+  text-transform: uppercase;
+
+  margin: 0 0 0 auto;
+}
+
+.projects-btn {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  padding: 12px 24px;
+  width: fit-content;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: inherit;
+  background-color: transparent;
+  border-color: transparent;
+}
+.projects-btn::after {
+  content: '';
+  display: block;
+  height: 4px;
+  margin-top: 12px;
+  margin-bottom: -1px;
+  background-color: var(--accet-green);
+
+  border-radius: 2px;
+}
