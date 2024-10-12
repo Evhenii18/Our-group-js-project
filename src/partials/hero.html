@@ -5,10 +5,17 @@
         >Fullstack <br />developer</span
       >
     </h1>
-    <div class="hero-img"></div>
+    <picture class="hero-img"
+      ><source srcset="../img/about-photo.jpg" media="(min-width: 768px)" />
+      <source srcset="../img/about-photo@2x.jpg" />
+      <img src="../img/about-photo@2x.jpg" alt="photo Lloyd Jefferson" />
+    </picture>
 
     <a class="hero-link-project" href=""
-      >Order the <span class="hero-text-color">project</span></a
+      ><svg class="hero-icon">
+        <use xlink:href="../img/sprite.svg#icon-project-arrow"></use>
+      </svg>
+      Order the <span class="hero-text-color">project</span></a
     >
     <p class="hero-text">
       I work with people all over the world to create

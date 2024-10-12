@@ -1,46 +1,34 @@
 @font-face {
-    font-family: 'impact';
-    src: url('../fonts/impact.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'impact';
+  src: url('../fonts/impact.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
-    width: 100%; 
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
-<<<<<<< HEAD
-@media (max-width: 360px) {
-=======
 @media (min-width: 360px) {
->>>>>>> a394c94f137bf601e7d645fdbe47ada92020c4e3
-    .container {
-        max-width: 360px; 
-
-    }
+  .container {
+    max-width: 360px;
+  }
 }
 
-
-<<<<<<< HEAD
-@media (max-width: 768px) {
-=======
 @media (min-width: 768px) {
->>>>>>> a394c94f137bf601e7d645fdbe47ada92020c4e3
-    .container {
-        max-width: 768px; 
-        padding: 32px;
-    }
+  .container {
+    max-width: 768px;
+    padding: 32px;
+  }
 }
-
 
 @media (min-width: 1279px) {
-    .container {
-        max-width: 1280px; 
-        
-    }
+  .container {
+    max-width: 1280px;
+  }
 }
