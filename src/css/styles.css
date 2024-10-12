@@ -18,3 +18,30 @@
 @import url('./my_project.css');
 @import url('./work_together.css');
 @import url('./footer.css');
+
+:root {
+  background-color: #F0F0F0;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #1E2023;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+      width: 704px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+      width: 1216px;
+    }
+}
