@@ -14,7 +14,11 @@ body {
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
 @media (max-width: 360px) {
+=======
+@media (min-width: 360px) {
+>>>>>>> a394c94f137bf601e7d645fdbe47ada92020c4e3
     .container {
         max-width: 360px; 
 
@@ -22,7 +26,11 @@ body {
 }
 
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
+=======
+@media (min-width: 768px) {
+>>>>>>> a394c94f137bf601e7d645fdbe47ada92020c4e3
     .container {
         max-width: 768px; 
         padding: 32px;
