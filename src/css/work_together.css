@@ -93,6 +93,7 @@
   padding: 16px;
   border: 1px solid var(--light-grey);
   background: var(--light-grey);
+  resize: none;
 }
 .contact-form-btn {
   border-radius: 8px;
