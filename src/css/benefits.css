@@ -1,0 +1,68 @@
+.benefints-section {
+	background-image: url(../img/work-together-bg-desctop-min.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 50%;
+	margin-top: 47px;
+	margin-bottom: 164px;
+}
+
+.background {
+	backdrop-filter: blur(5px);
+}
+
+.benefits {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 117px;
+}
+
+.benefits-header {
+	display: block;
+	width: 681px;
+	font-family: Impact;
+	font-size: 108px;
+	font-weight: 400;
+	line-height: 124px;
+	letter-spacing: 1.7px;
+	text-align: left;
+	text-transform: uppercase;
+}
+.benefits-header span {
+	color: #00b068;
+}
+
+.benefits-list-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 32px;
+}
+
+.benefits-list-item {
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+	width: 384px;
+}
+
+.benefits-icon {
+	background-color: #bcdfd1;
+	border-radius: 8px;
+	padding: 12px;
+}
+
+.benefits-item-head {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 32px;
+	letter-spacing: 0.5px;
+	text-align: left;
+}
+
+.benefits-item-text {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	text-align: left;
+}
