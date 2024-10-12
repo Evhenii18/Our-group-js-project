@@ -1,0 +1,82 @@
+<section class="container contacts">
+  <h2 class="section-title">
+    let`s <span class="green-span">work together</span>
+  </h2>
+  <div class="contacts-form-box">
+    <div class="contacts-box">
+      <p class="contacts-text">
+        Contact me to transform your ideas into exceptional solutions.
+      </p>
+
+      <ul class="contacts-list">
+        <li class="contacts-item">
+          <a href="tel:+380904567890" class="contacts-link">
+            <svg class="contacts-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-phone"></use>
+            </svg>
+            +38 090 456 78 90
+          </a>
+        </li>
+        <li class="contacts-item">
+          <a href="mailto:lloydjefferson@gmail.com" class="contacts-link">
+            <svg class="contacts-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-mail"></use>
+            </svg>
+            lloydjefferson@gmail.com
+          </a>
+        </li>
+        <li class="contacts-item">
+          <a href="" class="contacts-link">
+            <svg class="contacts-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-place"></use>
+            </svg>
+            USA, New York
+          </a>
+        </li>
+      </ul>
+    </div>
+    <form class="contact-form" name="contact" action="submit">
+      <div class="input-box">
+        <input
+          autocomplete="off"
+          class="form-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your email*"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          required
+        />
+        <span name="span" class="notvalid is-hidden"
+          >Invalid email, try again. Example: example@mail.com</span
+        >
+      </div>
+      <textarea
+        class="form-input"
+        name="comment"
+        rows="3"
+        placeholder="Message"
+      ></textarea>
+
+      <button type="submit" class="send-message contact-form-btn">
+        SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  <div class="backdrop is-hidden" data-modal></div>
+</section>
+<!-- backdrop -->
+<!-- <div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-btn-close" data-modal-close>
+      <svg class="modal-close" width="24" height="24">
+        <use href="../img/icons-sprite.svg#close-modal"></use>
+      </svg>
+    </button>
+    <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+    <p class="modal-text">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+      </div> -->
+<!-- </div> -->
