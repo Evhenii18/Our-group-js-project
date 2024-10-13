@@ -4,6 +4,9 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 import 'normalize.css';
 
+import './js/work-together/workTogetther';
+import './js/my-projects/myProjects';
+
 const modalBtn = document.querySelector('.menu-icon-btn');
 const closeModal = document.querySelector('.header-modal-btn');
 const modal = document.querySelector('.header-modal');
@@ -24,5 +27,6 @@ function closeMenu() {
     body.classList.remove('body-hidden');
 }
 
-import './js/work-together/workTogetther';
+
+
 
