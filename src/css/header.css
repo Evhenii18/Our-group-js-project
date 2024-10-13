@@ -76,7 +76,7 @@
 	margin-right: auto;
 	z-index: 99999;
 	background-color: #f0f0f0;
-	background-image: url(./img/header.jpg);
+	background-image: url("./img/modal-bg.png 1x, ./img/modal-bg@2x.png 2x");
 	background-repeat: no-repeat;
 	background-position: right top;
 	padding-top: 20px;

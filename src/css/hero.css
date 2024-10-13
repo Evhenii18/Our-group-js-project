@@ -6,7 +6,7 @@
 	width: 320px;
 	padding-bottom: 88px;
 	margin: 0 auto;
-	background-image: url(./img/hero-bg-desctop-min.jpg);
+	background-image: url("./img/hero-bg-mob.png 1x, ./img/hero-bg-mob@2x.png 2x");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: top right;
@@ -101,7 +101,7 @@
 		width: 320px;
 	}
 	.hero-container {
-		background-image: url(./img/hero-bg-mob.jpg);
+		background-image: url("./img/hero-bg-mob.png 1x, ./img/hero-bg-mob@2x.png 2x");
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: top right;
@@ -141,7 +141,7 @@
 
 @media screen and (min-width: 1279px) {
 	.hero-container {
-		background-image: url(./img/hero-bg-desctop);
+		background-image: url("./img/hero-bg-desc.png 1x, ./img/hero-bg-desc@2x.png 2x");
 		width: 1280px;
 	}
 	.hero-container-img {
