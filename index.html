@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<link rel="icon" type="image/svg+xml" href="/Our-group-js-project/assets/favicon-vuQ0R6MU.svg" />
+	<link rel="icon" type="image/svg+xml" href="/Our-group-js-project/assets/favicon-DIq2GIVx.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Our First Group JS Project</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,11 +12,43 @@
   <script type="module" crossorigin src="/Our-group-js-project/index.js"></script>
   <link rel="modulepreload" crossorigin href="/Our-group-js-project/assets/vendor-Bk3t6AMZ.js">
   <link rel="stylesheet" crossorigin href="/Our-group-js-project/assets/vendor-BJX2VCyW.css">
-  <link rel="stylesheet" crossorigin href="/Our-group-js-project/assets/index-BO55oHcc.css">
+  <link rel="stylesheet" crossorigin href="/Our-group-js-project/assets/index-BJJZOpGB.css">
 </head>
 
 <body>
-	
+	<!-- <body class="body-hidden"> -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">LLOUD<span class="nav-link-span">JEFFERSON.</span></a>
+                <ul class="header-list">
+                    <li class="header-list-item"><a href="#about" class="header-item-link">About me</a></li>
+                    <li class="header-list-item"><a href="#projects" class="header-item-link">Projects</a></li>
+                    <li class="header-list-item"><a href="#" class="header-item-link">Contacts</a></li>
+                </ul>
+                <div class="menu-icon"><button class="menu-icon-btn">
+                <svg class="menu-svg" width="32" height="32">
+                        <use href="../img/sprite.svg#icon-header-menu"></use>
+                    </svg>
+                </button></div>
+            </nav>
+        </div>
+    </header>
+    <div class="header-modal is-visible">
+        <nav class="modal-nav">
+            <a href="../index.html" class="modal-nav-link">LLOUD<span class="modal-link-span">JEFFERSON.</span></a>
+            <ul class="modal-header-list">
+                <li href="#about" class="modal-list-item"><a class="header-item-link">About me</a></li>
+                <li href="#projects" class="modal-list-item"><a class="header-item-link">Projects</a></li>
+                <li href="#" class="modal-list-item"><a class="header-item-link">Contacts</a></li>
+            </ul>
+            <button class="header-modal-btn">
+                <svg class="header-modal-svg" height="32" width="32">
+                    <use href="../img/sprite.svg#icon-crose"></use></svg>
+            </button>
+        </nav>
+    </div>
+
 	<main>
 		<section class="hero-section container">
   <div class="hero-container">
@@ -42,7 +74,7 @@
     </div>
     <a class="hero-link-project" href="#work_together"
       ><svg class="hero-icon">
-        <use xlink:href="/Our-group-js-project/assets/sprite-DCzse28D.svg#icon-project-arrow"></use>
+        <use xlink:href="/Our-group-js-project/assets/sprite-BLq0qhD4.svg#icon-project-arrow"></use>
       </svg>
       Order the <span class="hero-text-color">project</span></a
     >
@@ -135,7 +167,7 @@
           >visit
 
           <svg class="contacts-icon" width="24" height="24">
-            <use href="/Our-group-js-project/assets/sprite-DCzse28D.svg#icon-visit-arrow"></use>
+            <use href="/Our-group-js-project/assets/sprite-BLq0qhD4.svg#icon-visit-arrow"></use>
           </svg>
         </a>
       </div>
@@ -154,7 +186,7 @@
           >visit
 
           <svg class="contacts-icon" width="24" height="24">
-            <use href="/Our-group-js-project/assets/sprite-DCzse28D.svg#icon-visit-arrow"></use>
+            <use href="/Our-group-js-project/assets/sprite-BLq0qhD4.svg#icon-visit-arrow"></use>
           </svg>
         </a>
       </div>
@@ -173,7 +205,7 @@
           >visit
 
           <svg class="contacts-icon" width="24" height="24">
-            <use href="/Our-group-js-project/assets/sprite-DCzse28D.svg#icon-visit-arrow"></use>
+            <use href="/Our-group-js-project/assets/sprite-BLq0qhD4.svg#icon-visit-arrow"></use>
           </svg>
         </a>
       </div>
@@ -239,7 +271,7 @@
         <li class="contacts-item">
           <a href="tel:+380904567890" class="contacts-link">
             <svg class="contacts-icon" width="24" height="24">
-              <use href="/Our-group-js-project/assets/sprite-DCzse28D.svg#icon-phone"></use>
+              <use href="/Our-group-js-project/assets/sprite-BLq0qhD4.svg#icon-phone"></use>
             </svg>
             +38 090 456 78 90
           </a>
@@ -247,7 +279,7 @@
         <li class="contacts-item">
           <a href="mailto:lloydjefferson@gmail.com" class="contacts-link">
             <svg class="contacts-icon" width="24" height="24">
-              <use href="/Our-group-js-project/assets/sprite-DCzse28D.svg#icon-mail"></use>
+              <use href="/Our-group-js-project/assets/sprite-BLq0qhD4.svg#icon-mail"></use>
             </svg>
             lloydjefferson@gmail.com
           </a>
@@ -255,7 +287,7 @@
         <li class="contacts-item">
           <a href="" class="contacts-link">
             <svg class="contacts-icon" width="24" height="24">
-              <use href="/Our-group-js-project/assets/sprite-DCzse28D.svg#icon-place"></use>
+              <use href="/Our-group-js-project/assets/sprite-BLq0qhD4.svg#icon-place"></use>
             </svg>
             USA, New York
           </a>
@@ -278,7 +310,7 @@
           >Invalid email, try again. Example: example@mail.com</span
         >
         <svg class="input-icon is-hidden" width="16" height="16">
-          <use href="/Our-group-js-project/assets/sprite-DCzse28D.svg#icon-ep_success-filled"></use>
+          <use href="/Our-group-js-project/assets/sprite-BLq0qhD4.svg#icon-ep_success-filled"></use>
         </svg>
       </div>
       <textarea
