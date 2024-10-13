@@ -5,7 +5,7 @@ import 'accordion-js/dist/accordion.min.css';
 import 'normalize.css';
 
 import './js/work-together/workTogetther';
-
+import './js/faq/faq.js';
 import './js/my-projects/myProjects';
 
 
