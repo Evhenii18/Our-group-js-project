@@ -7,6 +7,7 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
+@import url('./utils.css');
 
 /* Sections style */
 @import url('./header.css');
@@ -19,4 +20,3 @@
 @import url('./my_project.css');
 @import url('./work_together.css');
 @import url('./footer.css');
-
