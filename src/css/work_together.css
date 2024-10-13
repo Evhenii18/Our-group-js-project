@@ -3,7 +3,8 @@
   flex-direction: column;
   gap: 40px;
   position: relative;
-  padding: 80px 20px;
+  padding: 0px 20px;
+  margin-bottom: 80px;
 }
 .section-title {
   font-family: var(--second-family);
@@ -25,7 +26,6 @@
 }
 
 .contacts-text {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -68,7 +68,6 @@
 }
 
 .notvalid {
-  font-family: var(--font-family);
   font-weight: 300;
   font-size: 12px;
   line-height: 133%;
@@ -182,7 +181,6 @@
   stroke: var(--accet-green);
 }
 .modal-title {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
@@ -192,7 +190,6 @@
   color: var(--accet-green);
 }
 .modal-text {
-  font-family: var(--font-family);
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
@@ -208,11 +205,13 @@
 @media screen and (min-width: 768px) {
   .contacts {
     gap: 60px;
-    background-image: url(../img/work_together_bg.png);
+    background-image: url(../img/work-together-bg-tablet.png);
     background-repeat: no-repeat;
     background-position: 100% 0%;
-    padding: 124px 32px;
+    padding: 0px 32px;
+    margin-bottom: 124px;
   }
+
   .section-title {
     font-size: 108px;
     line-height: 1.15;
@@ -248,9 +247,11 @@
 }
 @media screen and (min-width: 1280px) {
   .contacts {
-    background-image: url(../img/work_together_bg_1280.png);
-    padding: 164px 32px;
+    background-image: url(../img/work-together-bg-desc.png);
+    padding: 0px 32px;
+    margin-bottom: 164px;
   }
+
   .section-title {
     width: 50%;
   }
@@ -267,5 +268,20 @@
   }
   .contact-form {
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../img/work-together-bg-tablet@2x.png.png);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../img/work-together-bg-desc@2x.png.png);
   }
 }
