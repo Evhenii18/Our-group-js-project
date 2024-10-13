@@ -11,6 +11,7 @@
 .tech-skills {
   padding: 0;
   position: relative;
+  margin-bottom: 80px;
 }
 .list-container {
   max-width: 360px;
@@ -23,7 +24,7 @@
 }
 .second-list-container {
   position: relative;
-  background-color: #e4e5e6;
+  background-color: var(--light-grey);
   transform: rotate(2deg);
 }
 
@@ -47,14 +48,14 @@
   border-radius: 2px;
   width: 8px;
   height: 8px;
-  background-color: #00b068;
+  background-color: var(--accet-green);
   transform: rotate(-180deg);
   margin: 0 24px;
   vertical-align: middle;
 }
 
 .second-tech-skills-item {
-  color: #00b068;
+  color: var(--accet-green);
   position: relative;
   display: inline;
   transform: rotate(2deg);
@@ -67,7 +68,7 @@
   border-radius: 2px;
   width: 8px;
   height: 8px;
-  background-color: #292929;
+  background-color: var(--black);
   transform: rotate(-180deg);
   margin: 0 24px;
   vertical-align: middle;
@@ -134,10 +135,16 @@
     max-width: 1280px;
     height: 104px;
   }
+  .tech-skills {
+    margin-bottom: 124px;
+  }
 }
 
 @media (min-width: 1280px) {
   .first-list-container {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .tech-skills {
+    margin-bottom: 164px;
   }
 }

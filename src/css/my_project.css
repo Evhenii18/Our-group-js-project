@@ -3,7 +3,6 @@
   flex-direction: column;
   gap: 40px;
   align-items: center;
-  padding-top: 80px;
 }
 .projects-list {
   display: flex;
@@ -107,7 +106,6 @@
 @media screen and (min-width: 768px) {
   .my-projects {
     gap: 60px;
-    padding-top: 124px;
   }
   .projects-list {
     gap: 60px;
@@ -133,7 +131,6 @@
 @media screen and (min-width: 1280px) {
   .my-projects {
     gap: 80px;
-    padding-top: 164px;
   }
   .projects-list {
     gap: 80px;
