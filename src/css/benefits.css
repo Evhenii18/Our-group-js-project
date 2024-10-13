@@ -1,6 +1,8 @@
 .benefits {
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .benefits-header {
@@ -176,7 +178,7 @@
 
 	.benefits {
 		grid-template-columns: 1, 3fr;
-		background-image: url(./img/work-together-bg-desctop-min.jpg);
+		background-image: url("/img/benefits-bg-desc.png 1x, /img/benefits-bg-desc@2x.png 2x");
 		background-repeat: no-repeat;
 		background-position: right top;
 	}
@@ -192,7 +194,7 @@
 	}
 
 	.benefits-list-item:nth-child(1) {
-		margin-top: -75px;
+		
 		grid-column: 3;
 	}
 	.benefits-list-item:nth-child(2) {

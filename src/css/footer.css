@@ -19,6 +19,8 @@ footer {
 .footer-container {
     padding-top: 40px;
     padding-bottom: 24px;
+		padding-left: 20px;
+		padding-right: 20px;
 }
 
 .footer-main-section {
@@ -46,6 +48,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 24px;
+		
 }
 
 .footer-social-link {
