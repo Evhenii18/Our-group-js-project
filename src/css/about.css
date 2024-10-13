@@ -103,7 +103,7 @@
 	}
 
 	.about-content {
-		background-image: url("/img/about/about-decore-bg-tab-1x.png");
+		background-image: url("/img/about-decore-bg-tab-1x.png");
 		background-repeat: no-repeat;
 		background-position: right bottom 156px;
 	}
@@ -130,7 +130,7 @@
 
 @media screen and (min-width: 1280px) {
 	.about-content {
-		background-image: url("/img/about/about-decore-bg-1x.png");
+		background-image: url("/img/about-decore-bg-1x.png");
 		background-repeat: no-repeat;
 		background-position: right bottom 264px;
 	}
