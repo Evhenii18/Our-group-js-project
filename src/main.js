@@ -1,10 +1,8 @@
-
-import iziToast from "izitoast";
+import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 import 'normalize.css';
-
 
 const modalBtn = document.querySelector('.menu-icon-btn');
 const closeModal = document.querySelector('.header-modal-btn');
@@ -25,3 +23,6 @@ function closeMenu() {
     modal.classList.remove('is-visible');
     body.classList.remove('body-hidden');
 }
+
+import './js/work-together/workTogetther';
+
