@@ -6,26 +6,11 @@
   padding-top: 96px;
   padding-bottom: 56px;
   overflow: hidden;
-  background-image: url(../img/hero-bg-desctop-min.jpg);
+  background-image: url(./img/hero-bg-desctop-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
   margin: 0 auto;
-}
-
-.hero-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(../img/hero-bg-desctop-min.jpg);
-  background-size: cover;
-  background-position: top right;
-  background-repeat: no-repeat;
-  filter: blur(6px);
-  z-index: 1;
 }
 
 .hero-img {
@@ -155,10 +140,7 @@
     padding: 40px 0px;
     height: 104px;
   }
-  .hero-container {
-    padding-top: 72px;
-    padding-bottom: 88px;
-  }
+
   .hero-link-project span {
     padding: 32px 167px 32px 0;
   }
