@@ -4,4 +4,5 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 import 'normalize.css';
 
+import './js/my-projects/myProjects';
 import './js/work-together/workTogetther';
