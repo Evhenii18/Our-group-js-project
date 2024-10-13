@@ -26,11 +26,11 @@ html {
     background-color: #FFFFFF;
     display: flex;
 align-items: center;
-justify-content: flex-start;
+justify-content: space-between;
 flex-direction: row;
+vertical-align: middle;
 /* gap: 437px; */
-gap: 108px;
-
+/* gap: 108px; */
 }
 
 .nav {
@@ -83,7 +83,7 @@ height: 800px;
     background-repeat: no-repeat;
     background-position: right top;
     padding: 20px;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .modal-nav {
@@ -143,6 +143,7 @@ color: #292929;
 
 @media screen and (min-width: 360px) {
     .header{
+        width: 360px;
         padding: 36px 32px;
         gap: 166px;
     }
@@ -178,6 +179,7 @@ color: #292929;
 
     .header{
         padding: 36px 32px;
+        width: 768px;
     }
 
     .header-list {
@@ -215,6 +217,7 @@ color: #292929;
 
 @media screen and (min-width: 1280px) {
     .header{
+        width: 1280px;
         padding: 36px 32px;
         /* gap: 437px; */
     }
