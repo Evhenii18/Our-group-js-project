@@ -170,25 +170,43 @@
 
 @media (min-width: 1280px) {
 	.benefints-section {
-		background-image: url(../img/work-together-bg-desctop-min.jpg);
-		background-repeat: no-repeat;
-		background-position: right top;
-		background-size: 50%;
 		margin-top: 80px;
 		margin-bottom: 164px;
 	}
-	.background {
-		backdrop-filter: blur(5px);
-	}
-	.container {
-	}
+
 	.benefits {
+		grid-template-columns: 1, 3fr;
+		background-image: url(./img/work-together-bg-desctop-min.jpg);
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
+	.background {
+		backdrop-filter: blur(10px);
 	}
 	.benefits-header {
+		
 	}
 	.benefits-list-wrap {
+		grid-template-columns: repeat(3, 3fr);
+		grid-template-rows: auto;
 	}
+
+	.benefits-list-item:nth-child(1) {
+		margin-top: -75px;
+		grid-column: 3;
+	}
+	.benefits-list-item:nth-child(2) {
+		grid-column: 1;
+	}
+	.benefits-list-item:nth-child(3) {
+		grid-column: 2;
+	}
+	.benefits-list-item:nth-child(4) {
+		grid-column: 3;
+	}
+	
 	.benefits-list-item {
+		
 	}
 	.benefits-icon {
 	}
