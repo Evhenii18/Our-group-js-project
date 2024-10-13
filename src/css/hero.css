@@ -6,7 +6,7 @@
 	width: 320px;
 	padding-bottom: 88px;
 	margin: 0 auto;
-	background-image: url("./img/hero-bg-mob.png 1x, ./img/hero-bg-mob@2x.png 2x");
+	background-image: url("/img/hero-bg-mob.png 1x, /img/hero-bg-mob@2x.png 2x");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: top right;
@@ -46,8 +46,38 @@
 	transition: color 0.5s ease-in-out;
 	border-radius: 16px;
 }
+.hero-link-project {
+	width: 416px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	padding-right: 91px;
+	padding-left: 4px;
+	font-size: 18px;
+	line-height: 1.56;
+	justify-content: center;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 2;
+	background-color: transparent;
+	transition: color 0.5s ease-in-out;
+	border-radius: 16px;
+}
 
-
+.hero-link-project::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 65%;
+	height: 100%;
+	background-color: #bcdfd1;
+	transition: width 0.5s ease-in-out;
+	z-index: -1;
+	border-radius: 16px;
+}
+.hero-link-project:hover::before {
+	width: 100%;
+}
 
 .hero-text {
 	margin-top: 72px;
@@ -101,7 +131,7 @@
 		width: 320px;
 	}
 	.hero-container {
-		background-image: url("./img/hero-bg-mob.png 1x, ./img/hero-bg-mob@2x.png 2x");
+		background-image: url("/img/hero-bg-mob.png 1x, /img/hero-bg-mob@2x.png 2x");
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: top right;
@@ -111,6 +141,8 @@
 @media screen and (min-width: 768px) {
 	.hero-container {
 		width: 704px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	.hero-title {
 		font-size: 124px;
@@ -141,7 +173,7 @@
 
 @media screen and (min-width: 1279px) {
 	.hero-container {
-		background-image: url("./img/hero-bg-desc.png 1x, ./img/hero-bg-desc@2x.png 2x");
+		background-image: url("/img/hero-bg-desc.png 1x, /img/hero-bg-desc@2x.png 2x");
 		width: 1280px;
 	}
 	.hero-container-img {
