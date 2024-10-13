@@ -1,31 +1,33 @@
-<header class="header">
-    <div class="container">
-        <nav class="nav">
-            <a href="../index.html" class="nav-link">LLOUD<span class="nav-link-span">JEFFERSON.</span></a>
-            <ul class="header-list">
-                <li href="#about" class="header-list-item"><a class="header-item-link">About me</a></li>
-                <li href="#projects" class="header-list-item"><a class="header-item-link">Projects</a></li>
-                <li href="#" class="header-list-item"><a class="header-item-link">Contacts</a></li>
+<body class="body-hidden">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">LLOUD<span class="nav-link-span">JEFFERSON.</span></a>
+                <ul class="header-list">
+                    <li class="header-list-item"><a href="#about" class="header-item-link">About me</a></li>
+                    <li class="header-list-item"><a href="#projects" class="header-item-link">Projects</a></li>
+                    <li class="header-list-item"><a href="#" class="header-item-link">Contacts</a></li>
+                </ul>
+                <div class="menu-icon"><button class="menu-icon-btn">
+                <svg class="menu-svg" width="32" height="32">
+                        <use href="../img/sprite.svg#icon-header-menu"></use>
+                    </svg>
+                </button></div>
+            </nav>
+        </div>
+    </header>
+    <div class="header-modal is-visible">
+        <nav class="modal-nav">
+            <a href="../index.html" class="modal-nav-link">LLOUD<span class="modal-link-span">JEFFERSON.</span></a>
+            <ul class="modal-header-list">
+                <li href="#about" class="modal-list-item"><a class="header-item-link">About me</a></li>
+                <li href="#projects" class="modal-list-item"><a class="header-item-link">Projects</a></li>
+                <li href="#" class="modal-list-item"><a class="header-item-link">Contacts</a></li>
             </ul>
-            <div class="menu-icon"><button class="menu-icon-btn" onclick="toggleMenu()">
-            <svg class="menu-svg" width="32" height="32">
-                    <use href="../img/sprite.svg#icon-header-menu"></use>
-                </svg>
-            <div class="menu-icon" onclick="toggleMenu()"></button></div>
+            <button class="header-modal-btn">
+                <svg class="header-modal-svg" height="32" width="32">
+                    <use href="../img/sprite.svg#icon-crose"></use></svg>
+            </button>
         </nav>
     </div>
-</header>
-<div class="header-modal is-vissible">
-    <nav class="modal-nav">
-        <a href="../index.html" class="modal-nav-link">LLOUD<span class="modal-link-span">JEFFERSON.</span></a>
-        <ul class="modal-header-list">
-            <li href="#about" class="modal-list-item"><a class="header-item-link">About me</a></li>
-            <li href="#projects" class="modal-list-item"><a class="header-item-link">Projects</a></li>
-            <li href="#" class="modal-list-item"><a class="header-item-link">Contacts</a></li>
-        </ul>
-        <button class="header-modal-btn">
-            <svg class="header-modal-svg" height="32" width="32">
-                <use href="../img/sprite.svg#icon-crose"></use></svg>
-        </button>
-    </nav>
-</div>
+</body>
