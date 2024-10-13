@@ -6,6 +6,9 @@ import 'normalize.css';
 
 import './js/work-together/workTogetther';
 
+import './js/my-projects/myProjects';
+
+
 const modalBtn = document.querySelector('.menu-icon-btn');
 const closeModal = document.querySelector('.header-modal-btn');
 const modal = document.querySelector('.header-modal');
@@ -24,4 +27,8 @@ function toggleMenu() {
 function closeMenu() { 
     modal.classList.remove('is-visible');
     body.classList.remove('body-hidden');
+
 }
+
+
+
