@@ -5,17 +5,21 @@
         >Fullstack <br />developer</span
       >
     </h1>
-    <picture class="hero-img"
-      ><source srcset="../img/about-photo.jpg" media="(min-width: 768px)" />
-      <source srcset="../img/about-photo@2x.jpg" />
-      <img
-        src="../img/about-photo@2x.jpg"
-        alt="photo Lloyd Jefferson"
-        width="592"
-        height="444"
-      />
-    </picture>
-
+    <div class="hero-container-img">
+      <picture class="hero-img"
+        ><source
+          srcset="../img/about-photo-min.jpg"
+          media="(min-width: 768px)"
+        />
+        <source srcset="../img/about-photo@2x-min.jpg" />
+        <img
+          src="../img/about-photo@2x-min.jpg"
+          alt="photo Lloyd Jefferson"
+          width="592"
+          height="444"
+        />
+      </picture>
+    </div>
     <a class="hero-link-project" href="./my_project.html"
       ><svg class="hero-icon">
         <use xlink:href="../img/sprite.svg#icon-project-arrow"></use>
