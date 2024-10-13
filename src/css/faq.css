@@ -180,6 +180,7 @@
     width: 526px;
     height: 408px;
     margin-top: 240px;
+    filter: blur(3px);
 }
 
 }
