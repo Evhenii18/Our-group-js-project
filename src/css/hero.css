@@ -31,23 +31,10 @@
 .hero-title span {
 	color: #00b068;
 }
+
 .hero-link-project {
-	width: 416px;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	padding-right: 91px;
-	padding-left: 4px;
-	font-size: 18px;
-	line-height: 1.56;
-	justify-content: center;
-	text-transform: uppercase;
-	z-index: 2;
-	background-color: transparent;
-	transition: color 0.5s ease-in-out;
-	border-radius: 16px;
-}
-.hero-link-project {
-	width: 416px;
+	display: block;
+	width: 320px;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	padding-right: 91px;
@@ -61,6 +48,7 @@
 	background-color: transparent;
 	transition: color 0.5s ease-in-out;
 	border-radius: 16px;
+	margin-top: 40px;
 }
 
 .hero-link-project::before {
@@ -135,6 +123,7 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: top right;
+		
 	}
 }
 
@@ -150,6 +139,7 @@
 		letter-spacing: 0.01em;
 	}
 	.hero-link-project {
+		width: 416px;
 		font-size: 20px;
 		line-height: 1.6;
 		padding-right: 0;
