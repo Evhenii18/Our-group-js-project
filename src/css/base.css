@@ -1,78 +1,77 @@
 @font-face {
-	font-family: "impact";
-	src: url("../fonts/impact.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'impact';
+  src: url('../fonts/impact.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
-	--font-family: "Poppins", sans-serif;
-	--second-family: "Impact", sans-serif;
-	--third-family: "Montserrat", sans-serif;
+  --font-family: 'Poppins', sans-serif;
+  --second-family: 'Impact', sans-serif;
+  --third-family: 'Montserrat', sans-serif;
 
-	--black: #292929;
-	--accet-green: #00b068;
-	--white: #f0f0f0;
-	--light-grey: #e4e5e6;
-	--hover-grey: #bbb;
-	--light-accent: #bcdfd1;
-	--hover: #009156;
-	--black-dt: #1e2023;
-	--accet-green-dt: #14c57c;
-	--white-dt: #f0f0f0;
-	--charcoal-dt: #2a2d32;
-	--hover-charcoal-dt: #3b3f45;
-	--dark-accet-dt: #204136;
-	--hover-green-dt: #009156;
-	--error: #e74a3b;
-	--animation-mode: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --black: #292929;
+  --accet-green: #00b068;
+  --white: #f0f0f0;
+  --light-grey: #e4e5e6;
+  --hover-grey: #bbb;
+  --light-accent: #bcdfd1;
+  --hover: #009156;
+  --black-dt: #1e2023;
+  --accet-green-dt: #14c57c;
+  --white-dt: #f0f0f0;
+  --charcoal-dt: #2a2d32;
+  --hover-charcoal-dt: #3b3f45;
+  --dark-accet-dt: #204136;
+  --hover-green-dt: #009156;
+  --error: #e74a3b;
+  --animation-mode: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-	body {
-		font-family: "Poppins", sans-serif;
-	}
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
 }
 
 .container {
-	max-width: 360px;
+  max-width: 360px;
 }
 
 section {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 @media (min-width: 360px) {
-	.container {
-		max-width: 360px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+  .container {
+    max-width: 360px;
+    /* margin-left: auto;
+		margin-right: auto; */
+  }
 
-	section {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (min-width: 768px) {
-	.container {
-		max-width: 768px;
-		
-	}
+  .container {
+    max-width: 768px;
+  }
 
-	section {
-		padding-left: 32px;
-		padding-right: 32px;
-	}
+  section {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 @media (min-width: 1280px) {
-	.container {
-		max-width: 1280px;
-	}
+  .container {
+    max-width: 1280px;
+  }
 
-	section {
-		padding-left: 32px;
-		padding-right: 32px;
-	}
+  section {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
