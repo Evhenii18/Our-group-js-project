@@ -109,20 +109,9 @@
   letter-spacing: 0.03em;
 }
 
-/* .hero-social-link::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  color: black;
-  transition: color 0.1s ease-in-out;
-}
-
-.hero-social-link:hover::before {
+.hero-social-link:hover {
   color: #00b068;
-} */
+}
 
 .hero-icon {
   position: relative;
@@ -176,6 +165,7 @@
     display: flex;
     position: relative;
     z-index: 2;
+    border-radius: 32px;
   }
   .hero-container {
     display: grid;
