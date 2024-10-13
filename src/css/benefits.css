@@ -128,7 +128,6 @@
 	.benefits {
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: 40px;
 		padding-top: 50px;
 		margin: 0 auto;
 	}
@@ -140,6 +139,7 @@
 		line-height: 124px;
 		letter-spacing: 1.75px;
 		text-align: left;
+		margin-bottom: 0;
 	}
 	.benefits-list-wrap {
 		display: grid;
