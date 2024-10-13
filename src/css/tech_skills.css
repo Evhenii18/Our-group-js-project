@@ -89,15 +89,17 @@
   flex-shrink: 0;
   min-width: 100%;
   white-space: nowrap;
-  animation-delay: 2s;
-  animation: marquee 10s linear infinite;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 @keyframes marqueeLine {
     from {
       transform: translateX(100%);
     }
-    
+
     to {
       transform: translateX(-100%);
     }
@@ -105,7 +107,7 @@
 
 .second-marquee__line {
     display: inline-block; 
-    animation: marquee 15s linear infinite;
+    animation: marqueeLine 7s ease-in-out infinite; 
     transform: rotate(2deg); 
 }
 
@@ -134,7 +136,7 @@
         clip: rect(0, 0, 0, 0);
         border: 0;
     }
-    
+
     .first-list-containert {
         padding: 32px 0px;
         width: 1392px;
@@ -144,7 +146,7 @@
         align-items: center;
         margin: 0 0 1em 0;
     }
-    
+
     .first-tech-skills-item {
         font-weight: 500;
         font-size: 32px;
@@ -153,7 +155,7 @@
         text-transform: uppercase;
         color: #292929;
     }
-    
+
     .first-tech-skills-item:not(:last-child)::after {
         content: "";
         display: inline-block;
@@ -165,7 +167,7 @@
         margin: 0 24px;
         vertical-align: middle;
     }
-    
+
     .second-list-container {
         padding: 32px 0px;
         width: 1392px;
@@ -175,7 +177,7 @@
         display: flex;
         align-items: center;
     }
-    
+
     .second-tech-skills-item {
         font-weight: 500;
         font-size: 32px;
@@ -186,7 +188,7 @@
         position: relative;
         display: inline;
     }
-    
+
     .second-tech-skills-item:not(:last-child)::after {
         content: "";
         display: inline-block;
@@ -194,43 +196,43 @@
         width: 8px;
         height: 8px;
         background-color: #292929;
-        transform: rotate(-180deg);
+        transform: rotate(180deg);
         margin: 0 24px;
         vertical-align: middle;
     }
-    
+
     .marquee {
         overflow: hidden;
         white-space: nowrap;
         width: 100%; 
     }
-    
+
     .marquee__line {
       flex-shrink: 0;
       min-width: 100%;
       white-space: nowrap;
       animation-name: marqueeLine;
-      animation-duration: 5s;
+      animation-duration: 7s;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
     }
-    
+
     @keyframes marqueeLine {
         from {
           transform: translateX(100%);
         }
-        
+
         to {
           transform: translateX(-100%);
         }
     }
-    
+
     .second-marquee__line {
         display: inline-block; 
-        animation: marquee 5s ease-in-out infinite; 
+        animation: marquee 10s ease-in-out infinite; 
         transform: rotate(2deg); 
     }
-    
+
     @keyframes marquee {
         from {
             transform: translateX(100%) rotate(2deg); 
@@ -246,7 +248,7 @@
         max-width: 768px; 
         padding: 32px;
     }
-    
+
     .first-list-container {
         padding: 40px 0;
         width: 1517px;
@@ -275,9 +277,9 @@
 @media (min-width: 1279px) {
     .container {
         max-width: 1280px; 
-        
+
     }
-    
+
     .first-list-container {
         padding: 40px 0px;
         width: 1517px;
@@ -295,8 +297,3 @@
     }
 
 }
-
-
-
-
-
