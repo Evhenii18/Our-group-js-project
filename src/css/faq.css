@@ -28,9 +28,6 @@
     color: #14c57c;
 }
 
-.question-container {
-}
-
 .question-box {
     display: flex;
     justify-content:space-between;
