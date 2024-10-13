@@ -80,12 +80,6 @@
   border-color: transparent;
   transition: color var(--animation-mode);
 }
-
-.projects-btn.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
 .projects-btn:hover,
 .projects-btn:focus {
   color: var(--accet-green);
