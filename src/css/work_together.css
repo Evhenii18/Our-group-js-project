@@ -9,8 +9,8 @@
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 52px;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;
   margin-left: 0;
@@ -216,7 +216,7 @@
   .section-title {
     font-size: 108px;
     line-height: 1.15;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
   }
   .contacts-text {
     font-size: 20px;
