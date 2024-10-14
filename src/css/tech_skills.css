@@ -22,11 +22,13 @@
 }
 .first-list-container {
   background-color: var(--light-accent);
+  transition: background-color var(--animation-mode);
 }
 .second-list-container {
   position: relative;
   background-color: var(--light-grey);
   transform: rotate(2deg);
+  transition: background-color var(--animation-mode);
 }
 
 .first-tech-skills-list {
@@ -74,6 +76,7 @@
   margin: 0 24px;
   vertical-align: middle;
   transform: rotate(2deg);
+  transition: background-color var(--animation-mode);
 }
 
 .marquee {

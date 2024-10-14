@@ -1,35 +1,65 @@
 <!-- <body class="body-hidden"> -->
 <header class="header" id="header">
-	<div class="header-container container">
-		<nav class="nav">
-			<a href="./index.html" class="nav-link">LLOUD<span class="nav-link-span">JEFFERSON.</span></a>
-			<ul class="header-list">
-				<li class="header-list-item"><a href="#about" class="header-item-link">About me</a></li>
-				<li class="header-list-item"><a href="#my_project" class="header-item-link">Projects</a></li>
-				<li class="header-list-item"><a href="#footer" class="header-item-link">Contacts</a></li>
-			</ul>
-			<div class="menu-icon">
-				<button class="menu-icon-btn">
-					<svg class="menu-svg" width="32" height="32">
-						<use href="./img/sprite.svg#icon-header-menu"></use>
-					</svg>
-				</button>
-			</div>
-		</nav>
-	</div>
+  <div class="header-container container">
+    <nav class="nav">
+      <a href="./index.html" class="nav-link"
+        >LLOUD<span class="nav-link-span">JEFFERSON.</span></a
+      >
+      <!-- switch-button -->
+      <button class="btn-toogle" id="theme-toggle">
+        <svg
+          class="btn-toogle-switch"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="10" cy="10" r="10" fill="#00B068" />
+        </svg>
+      </button>
+      <!-- switch-button -->
+      <ul class="header-list">
+        <li class="header-list-item">
+          <a href="#about" class="header-item-link">About me</a>
+        </li>
+        <li class="header-list-item">
+          <a href="#my_project" class="header-item-link">Projects</a>
+        </li>
+        <li class="header-list-item">
+          <a href="#footer" class="header-item-link">Contacts</a>
+        </li>
+      </ul>
+      <div class="menu-icon">
+        <button class="menu-icon-btn">
+          <svg class="menu-svg" width="32" height="32">
+            <use href="./img/sprite.svg#icon-header-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
 </header>
 <div class="header-modal">
-	<nav class="modal-nav">
-		<a href="./index.html" class="modal-nav-link">LLOUD<span class="modal-link-span">JEFFERSON.</span></a>
-		<ul class="modal-header-list">
-			<li class="modal-list-item"><a href="#about" class="header-item-link">About me</a></li>
-			<li class="modal-list-item"><a href="#my_project" class="header-item-link">Projects</a></li>
-			<li class="modal-list-item"><a href="#footer" class="header-item-link">Contacts</a></li>
-		</ul>
-		<button class="header-modal-btn">
-			<svg class="header-modal-svg" height="32" width="32">
-				<use href="./img/sprite.svg#icon-crose"></use>
-			</svg>
-		</button>
-	</nav>
+  <nav class="modal-nav">
+    <a href="./index.html" class="modal-nav-link"
+      >LLOYD<span class="modal-link-span">JEFFERSON.</span></a
+    >
+    <ul class="modal-header-list">
+      <li class="modal-list-item">
+        <a href="#about" class="header-item-link">About me</a>
+      </li>
+      <li class="modal-list-item">
+        <a href="#my_project" class="header-item-link">Projects</a>
+      </li>
+      <li class="modal-list-item">
+        <a href="#footer" class="header-item-link">Contacts</a>
+      </li>
+    </ul>
+    <button class="header-modal-btn">
+      <svg class="header-modal-svg" height="32" width="32">
+        <use href="./img/sprite.svg#close-modal"></use>
+      </svg>
+    </button>
+  </nav>
 </div>
