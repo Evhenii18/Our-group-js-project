@@ -205,11 +205,19 @@
 @media screen and (min-width: 768px) {
   .contacts {
     gap: 60px;
+
     background-image: url(../img/work-together-bg-tablet.png);
     background-repeat: no-repeat;
-    background-position: 100% 0%;
-    padding: 0px 32px;
+    background-position: right top;
+    padding: 124px 32px 0px;
     margin-bottom: 124px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .contacts {
+      background-image: url(../img/work-together-bg-tablet@2x.png);
+    }
   }
 
   .section-title {
@@ -248,8 +256,15 @@
 @media screen and (min-width: 1280px) {
   .contacts {
     background-image: url(../img/work-together-bg-desc.png);
-    padding: 0px 32px;
+    padding: 116px 32px 0px;
     margin-bottom: 164px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .contacts {
+      background-image: url(../img/work-together-bg-desc@2x.png);
+    }
   }
 
   .section-title {
@@ -268,20 +283,5 @@
   }
   .contact-form {
     width: 100%;
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (min-resolution: 192dpi),
-  screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .contacts {
-    background-image: url(../img/work-together-bg-tablet@2x.png.png);
-  }
-}
-
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .contacts {
-    background-image: url(../img/work-together-bg-desc@2x.png.png);
   }
 }
