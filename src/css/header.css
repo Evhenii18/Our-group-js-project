@@ -92,6 +92,7 @@
 }
 
 .menu-svg {
+  fill: inherit;
 }
 
 /* MODAL */
@@ -119,6 +120,7 @@
 		visibility 0.3s ease;
 }
 
+
 @media screen and (min-width: 320px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 320px) and (min-resolution: 192dpi),
   screen and (min-width: 320px) and (min-resolution: 2dppx) {
@@ -126,7 +128,6 @@
     background-image: url(../img/modal-bg2x.png);
   }
 }
-
 .modal-nav {
 }
 
@@ -167,6 +168,7 @@
 .modal-list-item:active,
 .modal-list-item:focus {
 	color: var(--accet-green);
+
 }
 
 .header-modal-btn {
@@ -179,6 +181,7 @@
 
 .header-modal-svg {
 	stroke: #292929;
+
 }
 
 /* MEDIA */

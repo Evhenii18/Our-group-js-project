@@ -9,7 +9,7 @@
   border: 0;
 }
 .tech-skills {
-	margin-top: 80px;
+  margin-top: 80px;
   padding: 0;
   position: relative;
   margin-bottom: 80px;
@@ -22,11 +22,13 @@
 }
 .first-list-container {
   background-color: var(--light-accent);
+  transition: background-color var(--animation-mode);
 }
 .second-list-container {
   position: relative;
   background-color: var(--light-grey);
   transform: rotate(2deg);
+  transition: background-color var(--animation-mode);
 }
 
 .first-tech-skills-list {
@@ -74,6 +76,7 @@
   margin: 0 24px;
   vertical-align: middle;
   transform: rotate(2deg);
+  transition: background-color var(--animation-mode);
 }
 
 .marquee {
@@ -119,20 +122,14 @@
   }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 768px) {
   .skills-item {
     font-size: 36px;
     line-height: 1.33;
     letter-spacing: 0.01em;
   }
   .list-container {
-    height: 124px;
-  }
-}
-
-@media (min-width: 768px) {
-  .list-container {
-    height: 104px;
+    height: 128px;
   }
   .tech-skills {
     margin-bottom: 124px;
