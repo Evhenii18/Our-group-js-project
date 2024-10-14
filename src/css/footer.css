@@ -5,15 +5,14 @@
   src: url(./fonts/impact.ttf);
 }
 
-footer {
+.footer {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: #292929;
-
-  border-top: 1px solid #e4e5e6;
+  /* color: #292929; */
+  border-top: 1px solid var(--light-grey);
 }
 
 .footer-container {
@@ -46,6 +45,7 @@ footer {
 
 .footer-social-list {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 24px;
 }
@@ -64,7 +64,7 @@ footer {
   margin: 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   footer {
     color: #f0f0f0;
 
@@ -78,7 +78,7 @@ footer {
   .footer-social-link:hover {
     color: #14c57c;
   }
-}
+} */
 
 @media screen and (min-width: 768px) {
   .footer-social-list {
