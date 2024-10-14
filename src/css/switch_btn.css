@@ -33,6 +33,19 @@ body.dark-theme .hero-link-project::before {
 body.dark-theme .hero-social {
   background: var(--charcoal-dt);
 }
+body.dark-theme header{
+  background-color: var(--black);
+}
+body.dark-theme .header-item-link {
+  color: var(--white);
+}
+body.dark-theme .nav-link{
+  color: var(--white);
+}
+body.dark-theme .header-item-link:hover,
+.projects-link:focus {
+  color: var(--hover);
+}
 body.dark-theme .first-list-container {
   background-color: var(--dark-accet-dt);
 }
