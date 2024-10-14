@@ -1,0 +1,87 @@
+.btn-toogle {
+  position: fixed;
+  padding: 2px;
+  border-radius: 16px;
+  width: 48px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  background: var(--light-grey);
+  border: 1px var(--light-grey);
+  justify-content: start;
+}
+.active-btn {
+  justify-content: end;
+}
+.btn-toogle-switch {
+  border-radius: 100%;
+  fill: var(--accet-green);
+}
+body {
+  transition: color var(--animation-mode),
+    background-color var(--animation-mode), fill var(--animation-mode);
+}
+/* DARK-THEME-STYLES */
+body.dark-theme {
+  fill: var(--white);
+  color: var(--white);
+  background-color: var(--black);
+}
+body.dark-theme .hero-link-project::before {
+  background-color: var(--accet-green-dt);
+}
+body.dark-theme .hero-social {
+  background: var(--charcoal-dt);
+}
+body.dark-theme .first-list-container {
+  background-color: var(--dark-accet-dt);
+}
+body.dark-theme .second-list-container {
+  background-color: var(--charcoal-dt);
+}
+body.dark-theme .second-tech-skills-item::before,
+.second-tech-skills-item:last-child::after {
+  background-color: var(--white);
+}
+body.dark-theme .projects-link {
+  background: var(--charcoal-dt);
+}
+body.dark-theme .projects-link:hover,
+.projects-link:focus {
+  background-color: var(--hover-charcoal-dt);
+}
+body.dark-theme .benefits-icon {
+  background-color: var(--dark-accet-dt);
+}
+body.dark-theme .open .question-box {
+  background-color: var(--dark-accet-dt);
+}
+body.dark-theme .open .answer {
+  background-color: var(--dark-accet-dt);
+}
+body.dark-theme .question-box {
+  border-bottom: 1px solid var(--white);
+}
+
+body.dark-theme .form-input {
+  background-color: var(--charcoal-dt);
+}
+body.dark-theme .contact-form-btn {
+  background-color: var(--accet-green-dt);
+}
+body.dark-theme .contact-form-btn:hover,
+.contact-form-btn:focus {
+  background-color: var(--hover);
+}
+body.dark-theme .modal {
+  background-color: var(--charcoal-dt);
+}
+body.dark-theme .modal-close,
+body.dark-theme .header-modal-svg {
+  stroke: var(--white);
+}
+body.dark-theme .header-modal {
+  background-color: var(--black);
+}
+
+/* check */
