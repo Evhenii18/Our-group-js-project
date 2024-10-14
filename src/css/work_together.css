@@ -205,10 +205,11 @@
 @media screen and (min-width: 768px) {
   .contacts {
     gap: 60px;
+
     background-image: url(../img/work-together-bg-tablet.png);
     background-repeat: no-repeat;
-    background-position: 100% 0%;
-    padding: 0px 32px;
+    background-position: right top;
+    padding: 124px 32px 0px;
     margin-bottom: 124px;
   }
   @media screen and (min-device-pixel-ratio: 2),
@@ -255,7 +256,7 @@
 @media screen and (min-width: 1280px) {
   .contacts {
     background-image: url(../img/work-together-bg-desc.png);
-    padding: 0px 32px;
+    padding: 116px 32px 0px;
     margin-bottom: 164px;
   }
   @media screen and (min-device-pixel-ratio: 2),
