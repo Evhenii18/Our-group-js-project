@@ -4,7 +4,6 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 import 'normalize.css';
 // switch-bt
-import './js/switch-btn/themeColorToggle.js';
 // switch-bt
 import './js/work-together/workTogetther';
 import './js/faq/faq.js';
