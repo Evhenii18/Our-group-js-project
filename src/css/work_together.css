@@ -300,6 +300,6 @@
   screen and (min-width: 1280px) and (min-resolution: 192dpi),
   screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(../img/work-together-bg-desc@2x.png.png);
+    background-image: url(../img/work-together-bg-desc@2x.png);
   }
 }

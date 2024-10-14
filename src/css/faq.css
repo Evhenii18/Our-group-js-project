@@ -147,6 +147,9 @@
     display: flex;
     gap: 104px;
     justify-content: space-between;
+		background-image: url(../img/faq-bg.png);
+		background-repeat: no-repeat;
+		background-position: left bottom;
   }
 
   .faq-title {
@@ -177,5 +180,13 @@
     height: 408px;
     margin-top: 240px;
     filter: blur(3px);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .faq-container {
+    background-image: url(../img/faq-bg@2x.png);
   }
 }
