@@ -178,7 +178,7 @@
 
 	.benefits {
 		grid-template-columns: 1, 3fr;
-		background-image: url("/img/benefits-bg-desc.png 1x, /img/benefits-bg-desc@2x.png 2x");
+		background-image: url(../img/benefits-bg-desc.png);
 		background-repeat: no-repeat;
 		background-position: right top;
 	}
@@ -216,4 +216,12 @@
 	}
 	.benefits-item-text {
 	}
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .benefits {
+    background-image: url(../img/benefits-bg-desc@2x.png);
+  }
 }
