@@ -9,7 +9,7 @@
   border: 0;
 }
 .tech-skills {
-	margin-top: 80px;
+  margin-top: 80px;
   padding: 0;
   position: relative;
   margin-bottom: 80px;
@@ -119,20 +119,14 @@
   }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 768px) {
   .skills-item {
     font-size: 36px;
     line-height: 1.33;
     letter-spacing: 0.01em;
   }
   .list-container {
-    height: 124px;
-  }
-}
-
-@media (min-width: 768px) {
-  .list-container {
-    height: 104px;
+    height: 128px;
   }
   .tech-skills {
     margin-bottom: 124px;
