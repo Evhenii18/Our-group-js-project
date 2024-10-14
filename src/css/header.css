@@ -41,14 +41,17 @@
 	height: 20px;
 	border-radius: 50%;
 	position: absolute;
-	top: 50%;
+	top: 2;
 	left: 2px;
-	transform: translateX(-100%);
+	
 	transition: left 0.3s ease;
 }
 
 .dark-mode-active {
-	background-color: #333; /* Цвет для темного режима */
+	background-color: #333; 
+		.btn-detail {
+			transform: translateX(120%);
+		}
 }
 
 .dark-mode-active .btn-detail {
