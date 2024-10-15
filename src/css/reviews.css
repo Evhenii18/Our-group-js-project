@@ -1,5 +1,6 @@
 .swiper {
   margin-top: 40px;
+	height: 224px;
 }
 
 .swiper-slide {
@@ -19,6 +20,7 @@
 @media (min-width: 1280px) {
   .swiper-slide {
     max-width: 592px;
+		position: relative;
   }
 }
 
@@ -32,11 +34,18 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+	position: absolute;
+	bottom: 20px;
+	
+	
 }
 
 .review-autor__name {
   margin-left: 16px;
   font-weight: 600;
+	position: absolute;
+	bottom: 30px;
+	left: 80px;
 }
 
 .swiper-buttons {
