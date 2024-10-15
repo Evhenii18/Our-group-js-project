@@ -11,8 +11,8 @@ import{i as w,S as k,a as L}from"./assets/vendor-Br3gR3Vd.js";(function(){const 
     </p>
   </div>`;e.innerHTML=i},r={contactForm:document.querySelector(".contact-form"),backDrop:document.querySelector(".backdrop"),errorMessage:document.querySelector(".notvalid"),checkedIcon:document.querySelector(".input-icon")},l=()=>r.backDrop.classList.toggle("is-hidden"),J=()=>{const e=document.querySelector("[data-modal-close]");l();const t=o=>{(o.code==="Escape"||o.currentTarget===o.target)&&(l(),window.removeEventListener("keydown",t))};window.addEventListener("keydown",t),r.backDrop.addEventListener("click",t),e.addEventListener("click",l)},M=e=>{e.preventDefault();const{email:{value:t},comment:{value:o}}=e.target;S({email:t,comment:o}).then(({title:i,message:s})=>{j(r.backDrop,i,s),J(),e.target.reset(),r.checkedIcon.classList.add("is-hidden")}).catch(i=>{q(`Error: № ${i.message}. Please verify the information you provided and try again `)})},x=E(e=>{const{valid:t}=e.target.validity;t?(r.errorMessage.classList.add("is-hidden"),e.target.classList.remove("notvalid"),r.checkedIcon.classList.remove("is-hidden")):(r.errorMessage.classList.remove("is-hidden"),e.target.classList.add("notvalid"))},1e3);r.contactForm.email.addEventListener("blur",()=>{r.errorMessage.classList.add("is-hidden")});r.contactForm.email.addEventListener("input",x);r.contactForm.addEventListener("submit",M);document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelectorAll(".question-box");e.forEach(o=>{o.addEventListener("click",()=>{const i=o.parentElement,s=i.querySelector(".answer");s.style.display=s.style.display==="block"?"none":"block",i.classList.toggle("open"),e.forEach(n=>{const c=n.parentElement;c!==i&&(c.classList.remove("open"),c.querySelector(".answer").style.display="none")})})});const t=document.querySelector(".question-element");if(t){const o=t.querySelector(".answer");o.style.display="block",t.classList.add("open")}});const g={projectsList:document.querySelector(".projects-list")},v=[{title:"power pulse webservice",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"mimino website",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"vyshyvanka vibes Landing Page",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"green harvest online store",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"wallet webservice ",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"chego jewelry website",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"energy flow webservice ",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"fruitbox online store",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"English excellence webservice ",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"starlight studio landing page",stacks:"React, JavaScript, Node JS, Git",link:"#"}],N=()=>{let e=g.projectsList.firstElementChild.getBoundingClientRect().height;window.scrollBy({top:e*2,behavior:"smooth"})},B=e=>{let o="";v.slice(e,e+3).map((i,s)=>{const n=s+e+1;o+=`<li class="projects-item">
       <img
-        src="./img/pj-${n}-min.jpg"
-        srcset="./img/pj-${n}-min.jpg 
+        src="../img/pj-${n}-min.jpg"
+        srcset="../img/pj-${n}-min.jpg 
         alt="project image"
         class="project-img"
       />
@@ -22,7 +22,7 @@ import{i as w,S as k,a as L}from"./assets/vendor-Br3gR3Vd.js";(function(){const 
         <a class="projects-link" href="${i.link}"
           >visit
           <svg class="contacts-icon" width="24" height="24">
-            <use href="./img/sprite.svg#icon-visit-arrow"></use>
+            <use href="../img/sprite.svg#icon-visit-arrow"></use>
           </svg>
         </a>
       </div>
