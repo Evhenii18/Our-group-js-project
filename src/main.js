@@ -8,7 +8,8 @@ import 'normalize.css';
 import './js/work-together/workTogetther';
 import './js/faq/faq.js';
 import './js/my-projects/myProjects';
-import './js/switch-btn/themeColorToggle.js';	
+import './js/switch-btn/themeColorToggle.js';
+import { parseReviews } from './js/reviews.js';
 
 const modalBtn = document.querySelector('.menu-icon-btn');
 const closeModal = document.querySelector('.header-modal-btn');
@@ -37,7 +38,9 @@ const darkModeBtn = document.querySelector('.dark-mode-btn');
 darkModeBtn.addEventListener('click', function() {
   // Переключаем класс для темной темы
   darkModeBtn.classList.toggle('dark-mode-active');
-  
+
   // Дополнительно: можно переключать темную тему на всем сайте
   document.body.classList.toggle('dark-mode');
 });
+
+parseReviews();
