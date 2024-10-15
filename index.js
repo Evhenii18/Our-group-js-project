@@ -11,8 +11,8 @@ import{i as k}from"./assets/vendor-Bk3t6AMZ.js";(function(){const t=document.cre
     </p>
   </div>`;e.innerHTML=c},n={contactForm:document.querySelector(".contact-form"),backDrop:document.querySelector(".backdrop"),errorMessage:document.querySelector(".notvalid"),checkedIcon:document.querySelector(".input-icon")},a=()=>n.backDrop.classList.toggle("is-hidden"),E=()=>{const e=document.querySelector("[data-modal-close]");a();const t=o=>{(o.code==="Escape"||o.currentTarget===o.target)&&(a(),window.removeEventListener("keydown",t))};window.addEventListener("keydown",t),n.backDrop.addEventListener("click",t),e.addEventListener("click",a)},j=e=>{e.preventDefault();const{email:{value:t},comment:{value:o}}=e.target;L({email:t,comment:o}).then(({title:c,message:s})=>{w(n.backDrop,c,s),E(),e.target.reset(),n.checkedIcon.classList.add("is-hidden")}).catch(c=>{S(`Error: № ${c.message}. Please verify the information you provided and try again `)})},q=b(e=>{const{valid:t}=e.target.validity;t?(n.errorMessage.classList.add("is-hidden"),e.target.classList.remove("notvalid"),n.checkedIcon.classList.remove("is-hidden")):(n.errorMessage.classList.remove("is-hidden"),e.target.classList.add("notvalid"))},1e3);n.contactForm.email.addEventListener("blur",()=>{n.errorMessage.classList.add("is-hidden")});n.contactForm.email.addEventListener("input",q);n.contactForm.addEventListener("submit",j);document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelectorAll(".question-box");e.forEach(o=>{o.addEventListener("click",()=>{const c=o.parentElement,s=c.querySelector(".answer");s.style.display=s.style.display==="block"?"none":"block",c.classList.toggle("open"),e.forEach(i=>{const r=i.parentElement;r!==c&&(r.classList.remove("open"),r.querySelector(".answer").style.display="none")})})});const t=document.querySelector(".question-element");if(t){const o=t.querySelector(".answer");o.style.display="block",t.classList.add("open")}});const g={projectsList:document.querySelector(".projects-list")},p=[{title:"power pulse webservice",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"mimino website",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"vyshyvanka vibes Landing Page",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"green harvest online store",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"wallet webservice ",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"chego jewelry website",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"energy flow webservice ",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"fruitbox online store",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"English excellence webservice ",stacks:"React, JavaScript, Node JS, Git",link:"#"},{title:"starlight studio landing page",stacks:"React, JavaScript, Node JS, Git",link:"#"}],J=()=>{let e=g.projectsList.firstElementChild.getBoundingClientRect().height;window.scrollBy({top:e*2,behavior:"smooth"})},M=e=>{let o="";p.slice(e,e+3).map((c,s)=>{const i=s+e+1;o+=`<li class="projects-item">
       <img
-        src="/img/pj-${i}-min.jpg"
-        srcset="/img/pj-${i}-min.jpg 1x, /img/pj-${i}@2x-min.jpg 2x"
+        src="../img/pj-${i}-min.jpg"
+        srcset="../img/pj-${i}-min.jpg 1x, ../img/pj-${i}@2x-min.jpg 2x"
         alt="project image"
         class="project-img"
       />
@@ -22,7 +22,7 @@ import{i as k}from"./assets/vendor-Bk3t6AMZ.js";(function(){const t=document.cre
         <a class="projects-link" href="${c.link}"
           >visit
           <svg class="contacts-icon" width="24" height="24">
-            <use href="./img/sprite.svg#icon-visit-arrow"></use>
+            <use href="../img/sprite.svg#icon-visit-arrow"></use>
           </svg>
         </a>
       </div>
