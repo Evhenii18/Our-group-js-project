@@ -1,14 +1,13 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
+
 import 'normalize.css';
 // switch-bt
 // switch-bt
-import './js/work-together/workTogetther';
-import './js/faq/faq.js';
-import './js/my-projects/myProjects';
-import './js/switch-btn/themeColorToggle.js';
+import './js/workTogetther';
+import './js/faq.js';
+import './js/myProjects';
+import './js/themeColorToggle.js';
 import { parseReviews } from './js/reviews.js';
 
 const modalBtn = document.querySelector('.menu-icon-btn');
