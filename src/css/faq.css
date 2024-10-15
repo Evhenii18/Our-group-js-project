@@ -1,13 +1,18 @@
+
 /* -------------------------------- Mobile -------------------------------- */
+body.dark-theme .open .question-box {
+  border-bottom: none;
+}
+
 .container {
   max-width: 360px;
 }
 
 .faq-container {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
-.faq-title-container {
+.faq-title {
   margin-bottom: 40px;
 }
 
@@ -38,8 +43,7 @@
   line-height: 28px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  border-bottom: 1px solid var(--light-grey);
-  transition: border-bottom var(--animation-mode);
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .question {
@@ -105,9 +109,10 @@
 
   .faq-container {
     margin-bottom: 124px;
+    padding: 0 32px;
   }
 
-  .faq-title-container {
+  .faq-title {
     margin-bottom: 60px;
   }
 
@@ -137,20 +142,18 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
+.container {
+  max-width: 1280px;
+}
 
-  .faq-container {
-    height: 1020px;
-    margin-bottom: 164px;
-    display: flex;
-    gap: 104px;
-    justify-content: space-between;
-		background-image: url(../img/faq-bg.png);
-		background-repeat: no-repeat;
-		background-position: left bottom;
-  }
+.faq-container {
+  height: 1020px;
+  margin-bottom: 164px;
+  padding: 0 32px;
+	background-image: url(../img/faq-bg.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
 
   .faq-title {
     width: 520px;
@@ -164,6 +167,10 @@
   .question-container {
     width: 592px;
     height: 744px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 104px;
   }
 
   .question-box {
@@ -178,15 +185,14 @@
     display: block;
     width: 526px;
     height: 408px;
-    margin-top: 240px;
-    filter: blur(3px);
+    filter: blur(7.40);
   }
 }
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 1280px) and (min-resolution: 192dpi),
   screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .faq-container {
+  /* .faq-container {
     background-image: url(../img/faq-bg@2x.png);
-  }
+  } */
 }
