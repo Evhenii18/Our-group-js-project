@@ -72,8 +72,8 @@ export const renderProjects = num => {
 
     markup += `<li class="projects-item">
       <img
-        src="./img/pj-${folderPosition}-min.jpg"
-        srcset="./img/pj-${folderPosition}-min.jpg 
+        src="../img/pj-${folderPosition}-min.jpg"
+        srcset="../img/pj-${folderPosition}-min.jpg 
         alt="project image"
         class="project-img"
       />
@@ -83,7 +83,7 @@ export const renderProjects = num => {
         <a class="projects-link" href="${project.link}"
           >visit
           <svg class="contacts-icon" width="24" height="24">
-            <use href="./img/sprite.svg#icon-visit-arrow"></use>
+            <use href="../img/sprite.svg#icon-visit-arrow"></use>
           </svg>
         </a>
       </div>
