@@ -1,0 +1,65 @@
+.swiper {
+  margin-top: 40px;
+}
+
+.swiper-slide {
+  padding: 32px;
+  background-color: var(--light-grey);
+  border-radius: 16px;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+.body-hidden.dark-theme .swiper-slide {
+  background-color: var(--charcoal-dt);
+}
+@media (min-width: 1280px) {
+  .swiper-slide {
+    max-width: 592px;
+  }
+}
+
+.review-autor {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.review-autor__photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.review-autor__name {
+  margin-left: 16px;
+  font-weight: 600;
+}
+
+.swiper-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.swiper-button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  padding: 8px;
+}
+.swiper-button:hover {
+  border: 1px solid var(--black);
+  background-color: var(--light-grey);
+}
+
+.swiper-button__prev-icon {
+  transform: rotate(180deg);
+}
+
+.button-disabled { opacity: 0.5; pointer-events: none; }

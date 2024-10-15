@@ -38,6 +38,7 @@ body {
 }
 
 .container {
+  min-width: 320px;
   max-width: 360px;
 }
 
@@ -47,19 +48,7 @@ section {
 }
 
 @media (min-width: 360px) {
-  .container {
-    max-width: 360px;
-  }
-  .container {
-    max-width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-  section {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -67,58 +56,6 @@ section {
     max-width: 768px;
     padding: 32px;
   }
-  .container {
-    max-width: 768px;
-  }
-
-  section {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media (min-width: 1279px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-
-  section {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-.container {
-  max-width: 360px;
-}
-
-section {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media (min-width: 360px) {
-  .container {
-    max-width: 360px;
-    /* margin-left: auto;
-		margin-right: auto; */
-  }
-
-  section {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
 
   section {
     padding-left: 32px;
@@ -129,10 +66,5 @@ section {
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
-  }
-
-  section {
-    padding-left: 32px;
-    padding-right: 32px;
   }
 }
