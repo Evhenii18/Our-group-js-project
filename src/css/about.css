@@ -161,6 +161,8 @@
 
   .about-img {
     width: 384px;
+		display: block;
+		margin-top: 280px;
   }
 
   .about-summary {
