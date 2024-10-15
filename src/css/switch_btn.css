@@ -30,22 +30,24 @@ body.dark-theme {
 body.dark-theme .hero-link-project::before {
   background-color: var(--accet-green-dt);
 }
+
 body.dark-theme .hero-social {
   background: var(--charcoal-dt);
 }
-body.dark-theme header{
+body.dark-theme header {
   background-color: var(--black);
 }
 body.dark-theme .header-item-link {
   color: var(--white);
 }
-body.dark-theme .nav-link{
+body.dark-theme .nav-link {
   color: var(--white);
 }
 body.dark-theme .header-item-link:hover,
-.projects-link:focus {
+.header-item-link:focus {
   color: var(--hover);
 }
+
 body.dark-theme .first-list-container {
   background-color: var(--dark-accet-dt);
 }

@@ -34,7 +34,7 @@ html {
 
 body {
   font-family: var(--font-family);
-	background-color: #FFFFFF;
+  background-color: var(--white);
 }
 
 .container {

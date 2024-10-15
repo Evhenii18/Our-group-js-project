@@ -193,13 +193,18 @@
 	.benefits-list-wrap {
 		grid-template-columns: repeat(3, 3fr);
 		grid-template-rows: auto;
+		
 	}
 
   .benefits-list-item:nth-child(1) {
     grid-column: 3;
+		margin-top: -100px;
+		
+		
   }
   .benefits-list-item:nth-child(2) {
     grid-column: 1;
+		
   }
   .benefits-list-item:nth-child(3) {
     grid-column: 2;
