@@ -34,7 +34,7 @@ html {
 
 body {
   font-family: var(--font-family);
-	background-color: #FFFFFF;
+  background-color: var(--white);
 }
 
 .container {
@@ -45,7 +45,6 @@ section {
   padding-left: 20px;
   padding-right: 20px;
 }
-
 
 @media (min-width: 360px) {
   .container {
@@ -137,5 +136,3 @@ section {
     padding-right: 32px;
   }
 }
-
-
