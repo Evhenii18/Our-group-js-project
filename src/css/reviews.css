@@ -1,3 +1,7 @@
+reviews-containet {
+  margin-bottom: 80px;
+}
+
 .swiper {
   margin-top: 40px; 	
 }
@@ -6,19 +10,20 @@
   padding: 32px;
   background-color: var(--light-grey);
   border-radius: 16px;
-
+  max-width: 620px;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.5px;
+  height: 300px;
 }
 .body-hidden.dark-theme .swiper-slide {
   background-color: var(--charcoal-dt);
 }
 @media (min-width: 1280px) {
   .swiper-slide {
-    max-width: 592px;
+    width: 592px;
 		position: relative;
   }
 }

@@ -6,6 +6,10 @@ const refs = {
 
 let count = 3;
 
+const firstRender = () => {
+  renderProjects(0);
+};
+
 const onHandleClick = e => {
   renderProjects(count);
   smoothScroll();
@@ -15,5 +19,5 @@ const onHandleClick = e => {
     return;
   }
 };
-
+firstRender();
 refs.loadBtn.addEventListener('click', onHandleClick);
