@@ -6,3 +6,4 @@
 6. https://github.com/Evhenii18/Our-group-js-project/compare/main...optimisations?expand=1
 7. https://github.com/Evhenii18/Our-group-js-project/compare/optimise?expand=1
 8. https://github.com/Evhenii18/Our-group-js-project/compare/switch-button?expand=1
+9. https://github.com/Evhenii18/Our-group-js-project/compare/check_mistakes?expand=1

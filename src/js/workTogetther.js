@@ -31,17 +31,18 @@ const onSbmit = e => {
     comment: { value: comment },
   } = e.target;
 
-  createContact({ email, comment })
-    .then(({ title, message }) => {
+  createContact(email, comment)
+    .then(({ data: { title, message } }) => {
       createModal(refs.backDrop, title, message);
       createModalFunctions();
       e.target.reset();
       refs.checkedIcon.classList.add('is-hidden');
     })
     .catch(error => {
-      errorMessege(
-        `Error: № ${error.message}. Please verify the information you provided and try again `
-      );
+      errorMessege({
+        title: 'Network response was not ok!',
+        message: 'Please try again later.',
+      });
     });
 };
 
