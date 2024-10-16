@@ -14,7 +14,8 @@ const importImg = async num => {
 };
 const makeAtributes = async num => {
   const imgPath = await importImg(num);
-  return `src:".${imgPath.default}" srcset=".${imgPath.default2x}"`;
+  return `src=".${imgPath.default}" 
+  srcset=".${imgPath.default2x}"`;
 };
 
 export const fullProjects = [
@@ -97,7 +98,7 @@ export const renderProjects = async num => {
     const project = projectsToRender[idx];
     const folderPosition = project.id;
     const imgAttributes = await makeAtributes(folderPosition);
-    // console.log(imgAttributes);
+    console.log(imgAttributes);
     markup += `<li class="projects-item">
       <img
          ${imgAttributes}
