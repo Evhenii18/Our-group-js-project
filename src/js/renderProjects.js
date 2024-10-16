@@ -1,4 +1,4 @@
-import iconPath from './img/sprite.svg';
+import iconPath from '../img/sprite.svg';
 const refs = {
   projectsList: document.querySelector('.projects-list'),
 };
