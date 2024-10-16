@@ -7,7 +7,7 @@
   padding: 32px;
   background-color: var(--light-grey);
   border-radius: 16px;
-
+  max-width: 620px;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 300;
