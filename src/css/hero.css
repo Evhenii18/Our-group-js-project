@@ -4,7 +4,7 @@
 
 .hero-container {
   width: 320px;
-  padding-bottom: 88px;
+  padding-top: 88px;
   margin: 0 auto;
   background-image: url(../img/hero-bg-mob.png);
   background-repeat: no-repeat;
@@ -19,6 +19,7 @@
 }
 
 .hero-title {
+  margin-top: 0;
   font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-size: 64px;
