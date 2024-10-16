@@ -189,8 +189,7 @@
 
 @media screen and (min-width: 360px) {
   .header {
-    display: flex;
-    flex-wrap: nowtap;
+   
     width: 360px;
     padding-left: 20px;
     padding-right: 20px;
@@ -198,6 +197,11 @@
     padding-bottom: 20px;
     gap: 166px;
   }
+
+  .nav (
+     display: flex;
+    flex-wrap: nowtap;
+  )
 
   .nav-link {
     font-weight: 400;
