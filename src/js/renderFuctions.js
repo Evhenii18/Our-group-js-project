@@ -1,3 +1,4 @@
+import iconPath from '../img/sprite.svg';
 import iziToast from 'izitoast';
 // import 'izitoast/dist/css/iziToast.min.css';
 
@@ -18,7 +19,7 @@ const createModal = (element, title, message) => {
   <div class="modal">
     <button class="modal-btn-close" data-modal-close>
       <svg class="modal-close" width="24" height="24">
-        <use href="./img/sprite.svg#close-modal"></use>
+        <use href="${iconPath}#close-modal"></use>
       </svg>
     </button>
     <h3 class="modal-title">${title}</h3>
