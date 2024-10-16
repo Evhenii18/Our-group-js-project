@@ -14,7 +14,7 @@ const themeColorToggle = () => {
 };
 
 addClassList(body, 'dark-theme');
-
+addClassList(toggleButton, 'active-btn');
 toggleButton.addEventListener('click', themeColorToggle);
 export default themeColorToggle;
 

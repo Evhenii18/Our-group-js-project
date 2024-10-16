@@ -20,12 +20,13 @@
 }
 
 .header-container {
+  padding: 0px;
   width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
+  /* display: flex;
+  flex-wrap: nowrap; */
 }
 
-.dark-mode-btn {
+/* .dark-mode-btn {
   display: block;
   width: 48px;
   height: 24px;
@@ -35,33 +36,18 @@
   position: relative;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
+} */
 
-.btn-detail {
-  background-color: #00b068;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  position: absolute;
-  top: 2;
-  left: 2px;
-
-  transition: left 0.3s ease;
-}
-
-.dark-mode-active {
+/* .dark-mode-active {
   background-color: #333;
   .btn-detail {
     transform: translateX(120%);
   }
-}
-
-.dark-mode-active .btn-detail {
-  /* Положение кружка в темном режиме */
-}
+} */
 
 .nav {
   display: flex;
+  align-items: center;
   /* gap: 108px; */
   justify-content: space-between;
 }
@@ -98,6 +84,50 @@
 
 .menu-svg {
   fill: inherit;
+}
+/* WITCH BUTTON */
+.btn-toogle {
+  position: relative;
+  padding: 2px;
+  border-radius: 16px;
+  width: 48px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  background: var(--light-grey);
+  border: 1px var(--light-grey);
+  justify-content: start;
+  cursor: pointer;
+}
+.active-btn {
+  background-color: #333;
+  .btn-detail {
+    transform: translateX(120%);
+  }
+}
+.btn-detail {
+  background-color: #00b068;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* position: absolute; */
+  top: 2;
+  left: 2px;
+  transition: left 0.3s ease;
+  position: absolute;
+  z-index: 1;
+}
+.active-btn.btn-toogle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(70%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  z-index: 2;
 }
 
 /* MODAL */
@@ -175,7 +205,7 @@
 
 .header-modal-btn {
   position: absolute;
-  top: 20px;
+  top: 15px;
   right: 20px;
   border: none;
   background-color: transparent;
@@ -189,27 +219,12 @@
 
 @media screen and (min-width: 360px) {
   .header {
-   
     width: 360px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     gap: 166px;
-  }
-
-  .nav (
-     display: flex;
-    flex-wrap: nowtap;
-  )
-
-  .nav-link {
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #292929;
   }
 
   .header-list {
@@ -239,7 +254,11 @@
     padding: 36px 32px;
     width: 768px;
   }
-
+  .nav-link {
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
   /* .header-modal {
         display: none;
     } */
@@ -271,7 +290,10 @@
     padding: 36px 32px;
     /* gap: 437px; */
   }
-
+  .btn-toogle {
+    margin-left: auto;
+    margin-right: 40px;
+  }
   .nav-link {
     font-size: 32px;
     letter-spacing: 0.05em;

@@ -32,14 +32,14 @@ function closeMenu() {
 
 // DARK MODE
 
-const darkModeBtn = document.querySelector('.dark-mode-btn');
+// const darkModeBtn = document.querySelector('.dark-mode-btn');
 
-darkModeBtn.addEventListener('click', function() {
-  // Переключаем класс для темной темы
-  darkModeBtn.classList.toggle('dark-mode-active');
+// darkModeBtn.addEventListener('click', function() {
+//   // Переключаем класс для темной темы
+//   darkModeBtn.classList.toggle('dark-mode-active');
 
-  // Дополнительно: можно переключать темную тему на всем сайте
-  document.body.classList.toggle('dark-mode');
-});
+//   // Дополнительно: можно переключать темную тему на всем сайте
+//   document.body.classList.toggle('dark-mode');
+// });
 
 parseReviews();
