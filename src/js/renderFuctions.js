@@ -1,9 +1,10 @@
 import iziToast from 'izitoast';
 // import 'izitoast/dist/css/iziToast.min.css';
 
-const errorMessege = str =>
+const errorMessege = ({ title, message }) =>
   iziToast.warning({
-    message: str,
+    title,
+    message,
     position: 'topRight',
     backgroundColor: '#e74a3b',
     messageColor: '#FAFAFB',

@@ -135,6 +135,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity var(--animation-mode), visibility var(--animation-mode);
+  z-index: 999;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -147,15 +148,17 @@
   top: 50%;
   left: 50%;
   min-width: 300px;
-  max-height: 98%;
+  /* max-height: 98%; удаляю */
+  max-height: 330px;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   background-color: var(--white);
   border: 1px solid transparent;
   border-radius: 16px;
   transition: transform var(--animation-mode);
-  padding: 48px 32px;
+  padding: 0px 32px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 16px;
   transition: background-color var(--animation-mode);
 }
@@ -249,7 +252,8 @@
   }
   .modal {
     width: 492px;
-    padding: 64px;
+    padding: 0px 64px;
+    height: 280px;
   }
   .input-icon {
     top: 30%;
@@ -288,7 +292,7 @@
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+/* @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .contacts {
@@ -302,4 +306,4 @@
   .contacts {
     background-image: url(../img/work-together-bg-desc@2x.png);
   }
-}
+} */
