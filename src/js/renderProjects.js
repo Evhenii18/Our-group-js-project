@@ -1,16 +1,16 @@
-import iconPath from '/img/sprite.svg';
+import iconPath from '../img/sprite.svg';
 const refs = {
   projectsList: document.querySelector('.projects-list'),
 };
 
 const importImg = async num => {
-	try {
-		const pathImg = new URL(`../img/pj-${num}-min.jpg`, import.meta.url).href;
-		const pathImg2x = new URL(`../img/pj-${num}@2x-min.jpg`, import.meta.url).href;
-		return { default: pathImg, default2x: pathImg2x };
-	} catch (error) {
-		console.error('Error loading image:', error);
-	}
+  try {
+    const pathImg = await import(`../img/pj-${num}-min.jpg`);
+    const pathImg2x = await import(`../img/pj-${num}@2x-min.jpg`);
+    return { default: pathImg.default, default2x: pathImg2x.default };
+  } catch (error) {
+    console.error('Error loading image:', error);
+  }
 };
 const makeAtributes = async num => {
   const imgPath = await importImg(num);
