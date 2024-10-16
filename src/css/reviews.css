@@ -1,71 +1,74 @@
 reviews-containet {
-  margin-bottom: 80px;
+	margin-bottom: 80px;
 }
 
 .swiper {
-  margin-top: 40px; 	
+	margin-top: 40px;
 }
 
 .swiper-slide {
-  padding: 32px;
-  background-color: var(--light-grey);
-  border-radius: 16px;
-  max-width: 620px;
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  height: 300px;
+	padding: 32px;
+	background-color: var(--light-grey);
+	border-radius: 16px;
+	max-width: 620px;
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	height: 300px;
 }
 .body-hidden.dark-theme .swiper-slide {
-  background-color: var(--charcoal-dt);
-}
-@media (min-width: 1280px) {
-  .swiper-slide {
-    width: 592px;
-  }
+	background-color: var(--charcoal-dt);
 }
 
 .review-autor {
-  margin-top: 24px;
-  display: flex;
-  align-items: center;
+	margin-top: 24px;
+	display: flex;
+	align-items: center;
 }
 
 .review-autor__photo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-bottom: auto;
+}
+@media (min-width: 1280px) {
+	.swiper-slide {
+		width: 592px;
+	}
 }
 
 .review-autor__name {
-  margin-left: 16px;
-  font-weight: 600;
+	margin-left: 16px;
+	font-weight: 600;
 }
 
 .swiper-buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 16px;
-  margin-top: 24px;
+	display: flex;
+	justify-content: flex-end;
+	gap: 16px;
+	margin-top: 24px;
 }
 
 .swiper-button {
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--light-grey);
-  border-radius: 8px;
-  padding: 8px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid var(--light-grey);
+	border-radius: 8px;
+	padding: 8px;
 }
 .swiper-button:hover {
-  border: 1px solid var(--black);
-  background-color: var(--light-grey);
+	border: 1px solid var(--black);
+	background-color: var(--light-grey);
 }
 
 .swiper-button__prev-icon {
-  transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
-.button-disabled { opacity: 0.5; pointer-events: none; }
+.button-disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
