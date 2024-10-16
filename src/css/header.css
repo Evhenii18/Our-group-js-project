@@ -189,6 +189,8 @@
 
 @media screen and (min-width: 360px) {
   .header {
+    display: flex;
+    flex-wrap: nowtap;
     width: 360px;
     padding-left: 20px;
     padding-right: 20px;
