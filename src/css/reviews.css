@@ -13,6 +13,7 @@
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.5px;
+  max-width: 692px;
 }
 .body-hidden.dark-theme .swiper-slide {
   background-color: var(--charcoal-dt);
