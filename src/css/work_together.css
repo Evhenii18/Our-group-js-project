@@ -13,8 +13,11 @@
   line-height: 1.23;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: left;
+  
   margin-left: 0;
+}
+.section-title-work {
+
 }
 .green-span {
   color: var(--accet-green);
@@ -210,16 +213,20 @@
   .contacts {
     gap: 60px;
 
-    background-image: url(../img/work-together-bg-tablet.png);
-    background-repeat: no-repeat;
-    background-position: right top;
+    
     padding: 124px 32px 0px;
     margin-bottom: 124px;
   }
+
+	.container-work {
+		background-image: url(../img/work-together-bg-tablet.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+	}
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .contacts {
+    .container-work {
       background-image: url(../img/work-together-bg-tablet@2x.png);
     }
   }
@@ -228,6 +235,7 @@
     font-size: 108px;
     line-height: 1.15;
     letter-spacing: 0.02em;
+		margin-bottom: 80px;
   }
   .contacts-text {
     font-size: 20px;
@@ -259,7 +267,7 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .contacts {
+  .container-work {
     background-image: url(../img/work-together-bg-desc.png);
     padding: 116px 32px 0px;
     margin-bottom: 164px;
@@ -267,12 +275,12 @@
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .contacts {
+    .container-work {
       background-image: url(../img/work-together-bg-desc@2x.png);
     }
   }
 
-  .section-title {
+  .section-title-work {
     width: 50%;
   }
   .contacts-form-box {

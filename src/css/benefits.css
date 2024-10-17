@@ -61,12 +61,6 @@
 }
 
 @media (min-width: 360px) {
-  .benefints-section {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   .benefits-header {
     display: block;
@@ -172,10 +166,6 @@
 }
 
 @media (min-width: 1280px) {
-  .benefints-section {
-    margin-top: 80px;
-    margin-bottom: 164px;
-  }
 
   .benefits {
     grid-template-columns: 1, 3fr;
@@ -183,9 +173,8 @@
     background-repeat: no-repeat;
     background-position: right top;
   }
-  .background {
-    backdrop-filter: blur(10px);
-  }
+
+
   .benefits-header {
   }
   .benefits-list-wrap {
@@ -220,7 +209,7 @@
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 1280px) and (min-resolution: 192dpi),
   screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .benefits {
+  .benefints {
     background-image: url(../img/benefits-bg-desc@2x.png);
   }
 }

@@ -107,6 +107,8 @@
   .my-projects {
     gap: 60px;
   }
+	.section-title {
+	}
   .projects-list {
     gap: 60px;
   }
@@ -118,6 +120,7 @@
     font-size: 36px;
     line-height: 1.33;
     letter-spacing: 0.01em;
+
   }
   .projects-box {
     flex-direction: row;

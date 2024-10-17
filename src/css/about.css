@@ -1,58 +1,56 @@
-.about {
-  padding-left: 20px;
-  padding-right: 20px;
-	
-}
-
 .about-container {
-
-}
-
-.about-title {
-  margin-bottom: 40px;
 }
 
 .text-split {
-  color: #00b068;
+	color: #00b068;
 }
 
 .about-content {
 }
 
 .about-firstpart {
-
 	margin-bottom: 40px;
-	
-
 }
 
 .about-picture {
+	width: 330px;
+	height: 374px;
 }
 
 .about-img {
-  border-radius: 16px;
-  margin-bottom: 40px;
+	border-radius: 16px;
+	margin-bottom: 40px;
 }
 
 .about-subtitle {
-  font-family: Poppins, sans-serif;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  margin-bottom: 32px;
+	font-family: Poppins, sans-serif;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 1.25;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	margin-bottom: 32px;
+}
+.about-title {
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 52px;
+	line-height: 1.23;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	text-align: left;
+	margin-left: 0;
 }
 
 .about-text {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.03em;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.03em;
 }
 
 .about-text:not(:last-child) {
-  margin-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 .about-secondpart {
@@ -65,136 +63,154 @@
 }
 
 .about-secondpart-list-item:first-child {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .about-secondpart-sublist {
-  font-family: Poppins, sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
+	font-family: Poppins, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
 }
 
 .about-secondpart-sublist-item {
-  position: relative;
-  padding-left: 32px;
+	position: relative;
+	padding-left: 32px;
+	max-width: 384px;
 }
 
 .about-secondpart-sublist-item::before {
-  content: '';
-  display: block;
-  width: 4px;
-  height: 4px;
-  background-color: var(--accet-green);
-  border-radius: 1px;
-  position: absolute;
-  top: 10px;
-  left: 0px;
+	content: "";
+	display: block;
+	width: 4px;
+	height: 4px;
+	background-color: var(--accet-green);
+	border-radius: 1px;
+	position: absolute;
+	top: 10px;
+	left: 0px;
 }
 
 .about-secondpart-sublist-item:not(:last-child) {
-  margin-bottom: 12px;
+	margin-bottom: 12px;
 }
 
 @media screen and (min-width: 768px) {
-  .about-firstpart {
-    display: flex;
-    gap: 32px;
-    margin-bottom: 60px;
-  }
+	.about-firstpart {
+		display: flex;
+		gap: 32px;
+		margin-bottom: 60px;
+	}
 
-  .about-img {
-    width: 336px;
-    margin-bottom: 0;
-  }
+	.about-title {
+		font-size: 124px;
+	}
 
-  .about-summary {
-    flex: 1;
-    padding-bottom: 80px;
-  }
+	.about-img {
+		width: 336px;
+		margin-bottom: 0;
+	}
 
-  .about-subtitle {
-    font-size: 36px;
-    line-height: 1.33;
-    letter-spacing: 0.01em;
-  }
+	.about-picture {
+		width: 338px;
+		height: 392px;
+		margin-top: 408px;
+	}
+	.about-summary {
+		flex: 1;
+		margin-top: 40px;
+	}
 
-  .about-content {
-    background-image: url(../img/about-bg-table.png);
-    background-repeat: no-repeat;
-    background-position: right bottom 156px;
-  }
+	.about-subtitle {
+		font-size: 36px;
+		line-height: 1.33;
+		letter-spacing: 0.01em;
+	}
 
-  .about-secondpart-list {
-    display: flex;
-    gap: 32px;
-  }
+	.about-container {
+		background-image: url(../img/about-bg-table.png);
+		background-repeat: no-repeat;
+		background-size: 400px;
+		background-position: right;
+	}
 
-  .about-content {
-    background-image: url(../img/about-bg-table.png);
-    background-repeat: no-repeat;
-    background-position: right bottom 156px;
-  }
+	.about-secondpart-list {
+		display: flex;
+		gap: 32px;
+		margin-top: 60px;
+	}
 
-  .about-secondpart-list-item:first-child {
-    margin-bottom: unset;
-  }
+	.about-container {
+		background-image: url(../img/about-bg-table.png);
+		background-repeat: no-repeat;
+		background-position: right bottom 156px;
+	}
 
-  .about-secondpart-sublist-item:not(:last-child) {
-    margin-bottom: 16px;
-  }
+	.about-secondpart-list-item:first-child {
+		margin-bottom: unset;
+	}
+
+	.about-secondpart-sublist-item:not(:last-child) {
+		margin-bottom: 16px;
+	}
 }
 
 @media screen and (min-width: 1280px) {
-  .about-content {
-    background-image: url(../img/about-bg-desc.png);
-    background-repeat: no-repeat;
-    background-position: right bottom 264px;
-  }
+	.about-container {
+		background-image: url(../img/about-bg-desc.png);
+		background-repeat: no-repeat;
+		background-position: right bottom 264px;
+	}
+	.about-title {
+		font-size: 108px;
+	}
+	.about-picture {
+		width: 384px;
+		height: 448px;
+		margin-top: 312px;
+		margin-right: 136px;
+	}
 
-  .about-firstpart {
-    justify-content: flex-end;
-    margin-bottom: 80px;
-    gap: 136px;
-  }
+	.about-firstpart {
+		margin-left: 208px;
+		margin-bottom: 80px;
+	}
 
-  .about-img {
-    width: 384px;
+	.about-img {
+		width: 384px;
 		display: block;
-		margin-top: 280px;
-  }
+	}
 
-  .about-summary {
-    width: 488px;
-    flex: unset;
-    padding-bottom: 232px;
-  }
+	.about-summary {
+		width: 488px;
+		flex: unset;
+	}
 
-  .about-secondpart {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 104px;
-  }
+	.about-secondpart {
+		margin-left: 208px;
+		padding-right: 104px;
+	}
 
-  .about-secondpart-list {
-    gap: 136px;
-    max-width: 904px;
-  }
+	.about-secondpart-list {
+		gap: 136px;
+		max-width: 904px;
+		margin-top: 0;
+	}
+	.about-secondpart-sublist {
+	
+		justify-content: center;
+	}
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (min-resolution: 192dpi),
-  screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .about-content {
-    background-image: url(../img/about-bg-tablet@2x.png);
-  }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+	.about-container {
+		background-image: url(../img/about-bg-tablet@2x.png);
+	}
 }
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .about-content {
-    background-image: url(../img/about-bg-desc@2x.png);
-  }
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+	.about-container {
+		background-image: url(../img/about-bg-desc@2x.png);
+	}
 }
