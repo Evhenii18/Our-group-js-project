@@ -106,11 +106,11 @@ export const fullProjects = [
   },
 ];
 console.dir(refs.projectsList);
-export const smoothScroll = () => {
+export const smoothScroll = num => {
   let cardHeight =
     refs.projectsList.firstElementChild.getBoundingClientRect().height;
   window.scrollBy({
-    top: cardHeight * 1,
+    top: cardHeight * num,
     behavior: 'smooth',
   });
 };

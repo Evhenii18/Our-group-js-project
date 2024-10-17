@@ -8,9 +8,10 @@ let count = 3;
 
 const onHandleClick = e => {
   renderProjects(count);
-  smoothScroll();
+  smoothScroll(1);
   count += 3;
   if (count > fullProjects.length) {
+    smoothScroll(0);
     e.target.classList.add('is-hidden');
     return;
   }
