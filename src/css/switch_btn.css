@@ -1,7 +1,7 @@
-body {
+/* body {
   transition: color var(--animation-mode),
     background-color var(--animation-mode), fill var(--animation-mode);
-}
+} */
 /* DARK-THEME-STYLES */
 body.dark-theme {
   fill: var(--white);
@@ -36,7 +36,7 @@ body.dark-theme .second-list-container {
   background-color: var(--charcoal-dt);
 }
 body.dark-theme .second-tech-skills-item::before,
-.second-tech-skills-item:last-child::after {
+body.dark-theme .second-tech-skills-item:last-child::after {
   background-color: var(--white);
 }
 body.dark-theme .projects-link {

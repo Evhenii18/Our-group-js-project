@@ -89,7 +89,6 @@
   border: 1px solid transparent;
   background-color: var(--light-grey);
   resize: none;
-  transition: background-color var(--animation-mode);
 }
 .contact-form-btn {
   border-radius: 8px;
@@ -98,7 +97,6 @@
   border-color: transparent;
   background-color: var(--accet-green);
   color: var(--white);
-  transition: background-color var(--animation-mode);
 }
 .contact-form-btn:hover,
 .contact-form-btn:focus {
@@ -149,7 +147,7 @@
   left: 50%;
   min-width: 300px;
   /* max-height: 98%; удаляю */
-  max-height: 330px;
+  height: 330px;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   background-color: var(--white);
   border: 1px solid transparent;

@@ -28,7 +28,7 @@ export const fullProjects = [
     id: 1,
     title: 'power pulse webservice',
     stacks: 'React, JavaScript, Node JS, Git',
-    link: '#',
+    link: 'https://github.com/Evhenii18/Our-group-js-project',
     src: imgFirst,
     srcset: imgFirstX,
   },
@@ -36,7 +36,7 @@ export const fullProjects = [
     id: 2,
     title: 'mimino website',
     stacks: 'React, JavaScript, Node JS, Git',
-    link: '#',
+    link: 'https://github.com/Evhenii18/Our-group-js-project',
     src: imgSecond,
     srcset: imgSecondX,
   },
@@ -44,7 +44,7 @@ export const fullProjects = [
     id: 3,
     title: 'vyshyvanka vibes Landing Page',
     stacks: 'React, JavaScript, Node JS, Git',
-    link: '#',
+    link: 'https://github.com/Evhenii18/Our-group-js-project',
     src: imgThird,
     srcset: imgThirdX,
   },
@@ -52,7 +52,7 @@ export const fullProjects = [
     id: 4,
     title: 'green harvest online store',
     stacks: 'React, JavaScript, Node JS, Git',
-    link: '#',
+    link: 'https://github.com/Evhenii18/Our-group-js-project',
     src: imgFour,
     srcset: imgFourX,
   },
@@ -60,7 +60,7 @@ export const fullProjects = [
     id: 5,
     title: 'wallet webservice ',
     stacks: 'React, JavaScript, Node JS, Git',
-    link: '#',
+    link: 'https://github.com/Evhenii18/Our-group-js-project',
     src: imgFive,
     srcset: imgFiveX,
   },
@@ -68,7 +68,7 @@ export const fullProjects = [
     id: 6,
     title: 'chego jewelry website',
     stacks: 'React, JavaScript, Node JS, Git',
-    link: '#',
+    link: 'https://github.com/Evhenii18/Our-group-js-project',
     src: imgSix,
     srcset: imgSixX,
   },
@@ -76,7 +76,7 @@ export const fullProjects = [
     id: 7,
     title: 'energy flow webservice ',
     stacks: 'React, JavaScript, Node JS, Git',
-    link: '#',
+    link: 'https://github.com/Evhenii18/Our-group-js-project',
     src: imgSeven,
     srcset: imgSevenX,
   },
@@ -84,7 +84,7 @@ export const fullProjects = [
     id: 8,
     title: 'fruitbox online store',
     stacks: 'React, JavaScript, Node JS, Git',
-    link: '#',
+    link: 'https://github.com/Evhenii18/Our-group-js-project',
     src: imgEight,
     srcset: imgEightX,
   },
@@ -92,7 +92,7 @@ export const fullProjects = [
     id: 9,
     title: 'English excellence webservice ',
     stacks: 'React, JavaScript, Node JS, Git',
-    link: '#',
+    link: 'https://github.com/Evhenii18/Our-group-js-project',
     src: imgNine,
     srcset: imgNineX,
   },
@@ -100,17 +100,17 @@ export const fullProjects = [
     id: 10,
     title: 'starlight studio landing page',
     stacks: 'React, JavaScript, Node JS, Git',
-    link: '#',
+    link: 'https://github.com/Evhenii18/Our-group-js-project',
     src: imgTen,
     srcset: imgTenX,
   },
 ];
-
+console.dir(refs.projectsList);
 export const smoothScroll = () => {
   let cardHeight =
     refs.projectsList.firstElementChild.getBoundingClientRect().height;
   window.scrollBy({
-    top: cardHeight * 2,
+    top: cardHeight * 1,
     behavior: 'smooth',
   });
 };
@@ -129,7 +129,7 @@ export const renderProjects = num => {
       <p class="project-stacks">${project.stacks}</p>
       <div class="projects-box">
         <h3 class="projects-title">${project.title}</h3>
-        <a class="projects-link" href="${project.link}"
+        <a class="projects-link" target="_blank" href="${project.link}"
           >visit
           <svg class="contacts-icon" width="24" height="24">
             <use href="${iconPath}#icon-visit-arrow"></use>
