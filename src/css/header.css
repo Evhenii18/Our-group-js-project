@@ -7,6 +7,9 @@
 }
 
 .header {
+  /* position: fixed;
+  z-index: 3;
+  left: 15%; */
   position: relative;
   padding: 20px;
   /* padding: 36px 32px; */

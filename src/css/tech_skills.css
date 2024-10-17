@@ -92,10 +92,7 @@
   flex-shrink: 0;
   min-width: 100%;
   white-space: nowrap;
-  animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation: marqueeLine 7s ease-in-out infinite;
 }
 .second-marquee__line {
   display: inline-block;
@@ -115,10 +112,10 @@
 
 @keyframes marquee {
   from {
-    transform: translateX(-100%) rotate(2deg);
+    transform: translateX(-100%) rotate(0deg);
   }
   to {
-    transform: translateX(0) rotate(2deg);
+    transform: translateX(0) rotate(0.5deg);
   }
 }
 

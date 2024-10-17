@@ -48,7 +48,7 @@
   position: relative;
   z-index: 2;
   background-color: transparent;
-  transition: color 0.5s ease-in-out;
+  /* transition: color 0.5s ease-in-out; */
   border-radius: 16px;
   margin-top: 40px;
 }
@@ -93,7 +93,6 @@
   background: #e4e5e6;
   position: relative;
   z-index: 2;
-  transition: background var(--animation-mode);
 }
 
 .hero-social-link {
@@ -101,6 +100,7 @@
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
+  transition: color var(--animation-mode);
 }
 
 .hero-social-link:hover {

@@ -6,18 +6,15 @@ const refs = {
 
 let count = 3;
 
-const firstRender = () => {
-  renderProjects(0);
-};
-
 const onHandleClick = e => {
   renderProjects(count);
-  smoothScroll();
+  smoothScroll(1);
   count += 3;
   if (count > fullProjects.length) {
+    smoothScroll(0);
     e.target.classList.add('is-hidden');
     return;
   }
 };
-firstRender();
+
 refs.loadBtn.addEventListener('click', onHandleClick);
