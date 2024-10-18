@@ -172,6 +172,7 @@
     height: 444px;
     overflow: hidden;
     border-radius: 32px;
+		margin-top: -50px;
   }
 
   .hero-img {
