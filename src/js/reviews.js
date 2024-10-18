@@ -64,7 +64,7 @@ export async function parseReviews (params) {
       <div class="swiper-slide">
         <p class="review-text">${review.review}</p>
         <div class="review-autor">
-          <img class="review-autor__photo" src="${review.avatar_url}"></img>
+          <img class="review-autor__photo" alt="autor" src="${review.avatar_url}"></img>
           <p class="review-autor__name">${review.author}</p>
         </div>
       </div>`
