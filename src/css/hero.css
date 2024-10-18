@@ -1,15 +1,10 @@
 .hero-section {
-	padding-top: 0;
+
 }
 
 .hero-container {
   width: 320px;
-  padding-bottom: 80px;
   margin: 0 auto;
-  background-image: url(../img/hero-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: ;
-	padding-top: 164px;
 }
 
 .hero-img {
@@ -28,6 +23,7 @@
   text-transform: uppercase;
   position: relative;
   z-index: 2;
+	text-wrap: nowrap;
 }
 .hero-title span {
   color: #00b068;
@@ -121,7 +117,7 @@
   .hero-text {
     width: 320px;
   }
-  .hero-container {
+  .hero-section {
     background-image: url(../img/hero-bg-mob.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -164,8 +160,12 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .hero-container {
-    background-image: url(../img/hero-bg-desc.png);
+  .hero-section {
+		background-image: url(../img/hero-bg-desc.png);
+	}
+	
+	.hero-container {
+    
     width: 1280px;
   }
   .hero-container-img {
@@ -197,29 +197,5 @@
   }
   .hero-link-project {
     margin-top: 80px;
-  }
-}
-
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1280px) and (min-resolution: 192dpi),
-  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .hero-container {
-    background-image: url(../img/hero-bg-desc@2x.png);
-  }
-}
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (min-resolution: 192dpi),
-  screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero-container {
-    background-image: url(../img/hero-bg-tablet.png);
-  }
-}
-
-@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 320px) and (min-resolution: 192dpi),
-  screen and (min-width: 320px) and (min-resolution: 2dppx) {
-  .hero-container {
-    background-image: url(../img/hero-bg-mob@2x.png);
   }
 }

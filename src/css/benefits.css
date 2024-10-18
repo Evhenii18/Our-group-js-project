@@ -125,7 +125,6 @@
   .benefits {
     display: grid;
     grid-template-columns: 1fr 3;
-    padding-top: 50px;
     margin: 0 auto;
   }
   .benefits-header {

@@ -94,11 +94,11 @@
 	flex-shrink: 0;
 	min-width: 100%;
 	white-space: nowrap;
-	animation: marqueeLine 10s ease-in-out infinite;
+	animation: marqueeLine 30s ease-in-out infinite;
 }
 .second-marquee__line {
 	display: inline-block;
-	animation: marquee 10s ease-in-out infinite;
+	animation: marquee 30s ease-in-out infinite;
 	transform: rotate(2deg);
 }
 
