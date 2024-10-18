@@ -3,7 +3,6 @@
   flex-direction: column;
   gap: 40px;
   position: relative;
-  padding: 0px 20px;
   margin-bottom: 80px;
 }
 .section-title {
@@ -13,8 +12,7 @@
   line-height: 1.23;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  
-  margin-left: 0;
+  margin-bottom: 40px;
 }
 .section-title-work {
 
