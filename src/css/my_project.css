@@ -80,6 +80,7 @@
 	transition: color var(--animation-mode);
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 40px;
 }
 .projects-btn.is-hidden {
 	visibility: hidden;
@@ -135,6 +136,7 @@
 		line-height: 1.6;
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 60px;
 	}
 }
 @media screen and (min-width: 1280px) {
