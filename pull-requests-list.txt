@@ -1,9 +1,0 @@
-1. https://github.com/Evhenii18/Our-group-js-project/compare/work_together?expand=1
-2. https://github.com/Evhenii18/Our-group-js-project/pull/3
-3. https://github.com/Evhenii18/Our-group-js-project/compare/my_projects?expand=1
-4. https://github.com/Evhenii18/Our-group-js-project/compare/loadmore_btn?expand=1
-5. https://github.com/Evhenii18/Our-group-js-project/compare/main...skill_s?expand=1
-6. https://github.com/Evhenii18/Our-group-js-project/compare/main...optimisations?expand=1
-7. https://github.com/Evhenii18/Our-group-js-project/compare/optimise?expand=1
-8. https://github.com/Evhenii18/Our-group-js-project/compare/switch-button?expand=1
-9. https://github.com/Evhenii18/Our-group-js-project/compare/check_mistakes?expand=1
