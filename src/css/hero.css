@@ -1,4 +1,6 @@
-
+.hero-section {
+	padding-top: 0;
+}
 
 .hero-container {
   width: 320px;
@@ -6,8 +8,8 @@
   margin: 0 auto;
   background-image: url(../img/hero-bg-mob.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top right;
+  background-position: ;
+	padding-top: 164px;
 }
 
 .hero-img {
