@@ -30,7 +30,7 @@ import{a as j,i as L,S}from"./assets/vendor-Br3gR3Vd.js";(function(){const t=doc
       <div class="swiper-slide">
         <p class="review-text">${i.review}</p>
         <div class="review-autor">
-          <img class="review-autor__photo" src="${i.avatar_url}"></img>
+          <img class="review-autor__photo" alt="autor" src="${i.avatar_url}"></img>
           <p class="review-autor__name">${i.author}</p>
         </div>
       </div>`,"");s.insertAdjacentHTML("beforeend",r),a.update(),document.querySelector(".swiper").addEventListener("keydown",o=>{o.code==="ArrowLeft"&&(console.log("Keydown code: "+o.code),a.slidePrev()),o.code==="ArrowRight"&&(console.log("Keydown code: "+o.code),a.slideNext())}),document.querySelector(".swiper-button-prev").addEventListener("click",o=>a.slidePrev()),document.querySelector(".swiper-button-next").addEventListener("click",o=>a.slideNext())}const oe=document.querySelector(".menu-icon-btn"),re=document.querySelector(".header-modal-btn"),f=document.querySelector(".header-modal"),ie=document.querySelectorAll(".modal-list-item a"),w=document.querySelector("body");oe.addEventListener("click",ce);re.addEventListener("click",k);ie.forEach(e=>e.addEventListener("click",k));function ce(){f.classList.toggle("is-visible"),w.classList.toggle("body-hidden")}function k(){f.classList.remove("is-visible"),w.classList.remove("body-hidden")}se();
