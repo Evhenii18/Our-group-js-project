@@ -42,6 +42,7 @@ reviews-containet {
 @media (min-width: 768px) {
 	.swiper-slide {
 		width: 100%;
+		min-height: 224px;
 	}
 }
 
