@@ -57,12 +57,19 @@ body.dark-theme .open .question-box {
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.2px;
-
 	display: none;
 	padding: 0 24px 28px 24px;
-	background-color: #f1f1f1; /* Сірий фон по замовчуванню */
+	background-color: #f1f1f1;
 	border-radius: 0 0 5px 5px;
 	width: 100%;
+	max-height: 0; 
+	overflow: hidden; 
+	visibility: hidden; 
+	opacity: 0; 
+	transition: 
+		max-height 1s cubic-bezier(0.25, 1.0, 0.5, 1.0), 
+		padding 2s cubic-bezier(0.25, 1.0, 0.5, 1.0),
+		background-color 0.1s cubic-bezier(0.25, 1.0, 0.5, 1.0); 
 }
 
 .open .question-box {
@@ -70,14 +77,16 @@ body.dark-theme .open .question-box {
 	border-radius: 16px 16px 0 0;
 	border-bottom: none;
 	padding-bottom: 0;
-	transition: background-color var(--animation-mode);
 }
 
 .open .answer {
-	background-color: #bcdfd1; /* Зелений фон для відповіді при відкритті */
+	background-color: #bcdfd1;
 	border-radius: 0 0 10px 10px;
 	border-bottom: none;
-	transition: background-color var(--animation-mode);
+	max-height: 400px; 
+	visibility: visible; 
+	opacity: 1; 
+	animation: slideDown 1s ease-in-out;
 }
 
 .answer-text {
@@ -93,6 +102,18 @@ body.dark-theme .open .question-box {
 	transform: rotate(180deg);
 }
 
+@keyframes slideDown {
+  from {
+      max-height: 0;
+      opacity: 0;
+  }
+  to {
+      max-height: 400px;
+      opacity: 1;
+  }
+}
+
+/* -------------------------------- Tablet -------------------------------- */
 @media screen and (min-width: 768px) {
 	.faq-title {
 		margin-bottom: 60px;
@@ -123,6 +144,7 @@ body.dark-theme .open .question-box {
 	}
 }
 
+/* -------------------------------- Desktop -------------------------------- */
 @media screen and (min-width: 1280px) {
 	.faq-container {
 		background-image: url(../img/faq-bg.png);
